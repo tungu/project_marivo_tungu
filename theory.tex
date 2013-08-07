@@ -1,0 +1,560 @@
+
+%%%%%%%%% SECTION: THEORY %%%%%%%%%
+
+\section{Theoretical background}
+\label{sec:background}
+
+\subsection{Exergy analysis}
+\label{subsec:exergy_analysis}
+
+\emph{Exergy} is defined as the `maximum theoretical useful work (shaft work or electrical work) as the system is brought into complete thermodynamic equilibrium with the thermodynamic environment while the system interacts with this environment only' \cite{BejanAdrian;TsatsaronisGeorge;Moran1996,Moran1998,Thermoeconomics2001}. In this work, the discussions on exergetic efficiencies focus exclusively on the exergy associated with mass and energy transfers, namely the `flow exergy'. 
+
+Unlike energy, exergy is not conserved in real processes -- some is destroyed due to internal irreversibilities. On a time rate form and for a control volume with in- and outgoing flows, the exergy balance is expressed as: 
+
+	\begin{align}
+		\dot{E}_d&=\sum \dot{E}_{in} - \sum \dot{E}_{out} \nonumber\\
+					  &=\sum \left (1-\frac{T_0}{T_k} \right ) \dot{Q}_k-\dot{W}_{cv}+\sum \dot{m}_{in} e_{in} - \sum \dot{m}_{out} e_{out}
+	\end{align}
+
+where $\dot{E}_d$, $\dot{E}_{in}$ and $\dot{E}_{out}$ are the destroyed, inflowing and outflowing exergy rates, respectively. The symbol $\dot{m}$ denotes the mass flow rate of a stream of matter, $\dot{Q}_k$ and $\dot{W}_{cv}$ the time rates of energy transfer by heat and work ($\dot{Q}\geq0$ indicates heat transfer to the system, $\dot{W}\geq0$ work done by the system) and $e$ the specific exergy of a stream of matter. The symbols $T_0$ and $T_k$ denote the environmental and instantaneous temperatures. The subscripts $in$ and $out$ denote the inlet and outlet of the system, $k$ the boundary of the component of interest and $cv$ the control volume. The exergy destruction rate can also be calculated from the Gouy-Stodola theorem, which is expressed as:
+
+	\nomenclature[0]{$e$}{specific exergy (mass), J/kg}
+	\nomenclature[S]{k}{component}
+	\nomenclature[S]{cv}{control volume}
+	\nomenclature[S]{in}{inlet}
+	\nomenclature[S]{out}{outlet}
+	\nomenclature[0]{$\dot{S}$}{Entropy rate, MW/K}
+	\nomenclature[S]{gen}{generation}
+	\nomenclature[0]{$p$}{pressure, MPa}
+	\nomenclature[0]{$\dot{E}$}{Exergy rate, MW}
+	\nomenclature[S]{d}{destruction} 
+	\nomenclature[S]{l}{loss} 
+	\nomenclature[S]{0}{dead state} 
+	\nomenclature[P]{$^{*}$}{relative}	
+	\nomenclature[0]{$T$}{Temperature, K}
+	\nomenclature[P]{W}{work} 
+	\nomenclature[P]{Q}{heat} 
+	
+	\begin{equation}
+		\dot{E}_d=T_0\dot{S}_{gen}
+	\end{equation}
+	
+	where $\dot{S}_{gen}$ is the entropy generation rate.
+
+Exergy destruction is also called `internal exergy losses', since this is exergy that is lost related to the irreversibilities taking place \emph{inside} the control volume under study. The term exergy loss, written $\dot{E}_l$ \cite{BejanAdrian;TsatsaronisGeorge;Moran1996} refers to the exergy discharged to the environment without any practical use (e.g. exergy content of exhaust gases from a gas turbine -- exergy transferred to the cooling water), i.e. \emph{outside} the control volume under study. This waste exergy is destroyed when mixed irreversibly with the environment (\emph{Figure \ref{fig:balance}}) and is denoted `external exergy losses' in the works of Szargut and Kotas \cite{Szargut1998,Kotas1995}. 
+
+Kostenko \cite{Kostenko1983} and later Brodyansky \cite{Brodyansky1994} introduced the concept of \emph{`transit exergy'} $\dot{E}_{tr}$, which is the part of the exergy supplied to a system that flows through the system without undergoing any physical or chemical transformation. By opposition, they named the fraction of the exergy flowing into the system that is not transit exergy \emph{`consumed exergy'} and the fraction of the exergy flowing out that is not transit exergy\emph{`produced exergy'}. Transit exergy can be divided into the transit exergy carried with the waste streams $\dot{E}_{tr,l}$ and carried with the utilisable streams $\dot{E}_{tr,u}$. 
+
+
+\textbf{Introduce the exergy balance.}
+Hence, the exergetic balance becomes \cite{BejanAdrian;TsatsaronisGeorge;Moran1996,Tsatsaronis2007}:
+
+\begin{equation}
+\dot{E}_p=\dot{E}_f-\dot{E}_l-\dot{E}_d
+\end{equation}
+\nomenclature[S]{p}{product}
+\nomenclature[S]{f}{fuel}
+\nomenclature[G]{$\varepsilon$}{exergetic efficiency}
+		
+The general concept of `fuel' and `product' has been extensively applied over the last decades to characterise the thermodynamic performance of various systems \cite{Tsatsaronis1985,Thermoeconomics2001,BejanAdrian;TsatsaronisGeorge;Moran1996,Tsatsaronis1993}. 
+
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{balance.pdf}
+	\caption{Conceptual representation of the exergy balance}
+	\label{fig:balance}
+\end{figure*}
+	
+\subsection{Flow exergy}
+
+In the absence of nuclear, magnetic and electrical interactions, the exergy associated with a stream of matter is a function of its physical $e^{ph}$, chemical $e^{ch}$, kinetic $e^{kin}$ and potential $e^{pot}$ components \cite{BejanAdrian;TsatsaronisGeorge;Moran1996}. The specific exergy of a material stream, on a mass basis, is expressed as:
+
+	\nomenclature[P]{ph}{physical} 
+	\nomenclature[P]{ch}{chemical} 
+	\nomenclature[P]{kin}{kinetic} 
+	\nomenclature[P]{pot}{potential} 
+	\nomenclature[0]{$\bar{e}$}{specific exergy (molar), J/mol} 
+	\nomenclature[0]{$y$}{component/sub-system exergy ratio} 
+		
+	\begin{equation}
+		e=e^{ph}+e^{ch}+e^{kin}+e^{pot}
+	\end{equation}
+
+Physical exergy accounts for temperature and pressure differences from the environmental state and is defined as:  
+		
+	\begin{equation}
+		e^{ph}=(h-h_0)-T_0(s-s_0)=\underbrace{h-h(T_0,p)-T_0\left(s-s(T_0,p)\right)}_{I}+\underbrace{h-h(T,p_0)-T_0\left(s-s(T,p_0)\right)}_{II}
+	\end{equation}
+	
+	where $h$ and $s$ are the specific enthalpy and entropy of a stream of matter per unit-of-mass, respectively. \emph{Term I} and \emph{Term II} refer to the the temperature- and pressure-based components of the physical exergy \cite{Kotas1995}, respectively, and are also named thermal $e^{t}$ and mechanical $e^{m}$ exergies \cite{Tsatsaronis1993}.
+
+\nomenclature[P]{t}{thermal} 
+\nomenclature[P]{m}{mechanical} 
+
+Chemical exergy accounts for deviations in chemical composition from reference substances present in the environment. In this work, chemical exergy is calculated using the reference environment defined in Szargut \cite{Szargut1988,Szargut1989,Morris1986}. The specific chemical exergy of a given mixture $\bar{e}^{ch}_{mix}$, on a molar basis, is expressed as \cite{Sato2004}:
+
+\begin{equation*}
+	\bar{e}^{ch}_{mix}=\underbrace{\sum_i \bar{x}_i \bar{e}^{ch}_{i,mix}}_{I}=\underbrace{\sum_i \bar{x}_i \bar{e}^{ch}_{i,0}}_{II}+\underbrace{\left(\sum_i \bar{x}_i \left(h_{i,mix}-h_{i,0}\right)\right)-T_0\left(\sum_i \bar{x}_i \left(s_{i,mix}-s_{i,0}\right)\right)}_{III}
+\end{equation*}
+
+	where the molar fraction, the chemical compound and the mixture are denoted by $\bar{x}$, $i$ and $mix$, respectively. The specific molar exergy of a given chemical compound is written $\bar{e}^{ch}_{i,mix}$ when it is in the mixture and $\bar{e}^{ch}_{i,0}$ when it is in a pure component state. The term $I$ illustrates the chemical exergy of each individual chemical component in the mixture, the term $II$ the chemical exergy of these components in an unmixed form and the term $III$ the reduction in chemical exergy due to mixing effects.  
+
+\nomenclature[S]{i}{chemical compound}
+\nomenclature[S]{mix}{mixture}
+
+If no chemical transformations are taking place within a separation system, the terms related to the chemical exergy of pure components cancel and the change in chemical exergy is equal to the exergy used to perform the separation work \cite{Kotas1995}. The variation of chemical exergy between the inlet and the outlet of that system, which is, in this specific case, equal to the exergy used for separation, can be expressed as:
+
+\begin{equation}
+\Delta \dot{E}^{ch} = \sum_k \dot{E}^{ch}_k-\dot{E}^{ch}_{mix} = \sum_k \left( \sum_i \dot{n}_{i,k} \left(h_{i,k}-h_{i,mix}\right)-T_0\left(\sum_i \dot{n}_{i,k}\left(s_{i,k}-s_{i,mix}\right)\right)\right) = \sum_k \Delta \dot{E}^{ch}_k
+\end{equation}
+
+	where $\Delta \dot{E}^{ch}_k$ corresponds to the exergy used for separation into each stream $k$ exiting the system:
+
+\begin{equation}
+\Delta \dot{E}^{ch}_k = \left(\sum_i \dot{n}_{i,k} \left(h_{i,k}-h_{i,mix}\right)\right)-T_0\left(\sum_i \dot{n}_{i,k}\left(s_{i,k}-s_{i,mix}\right)\right)
+\end{equation}	
+
+The specific chemical exergy of hypothetical components $\bar{e}^{ch}_h$ is determined with the heuristic correlations of Rivero \cite{Rivero1999}:
+	
+\begin{equation}
+	\bar{e}^{ch}_h=\beta NHV_h+\sum \bar{z}_{mt} \bar{e}^{ch}_{mt}
+\end{equation}
+	
+	\nomenclature[0]{$z$}{pollutant molar fraction}
+	\nomenclature[0]{$h$}{specific enthalpy (mass), J/kg}
+	\nomenclature[0]{$s$}{specific entropy (mass), J/(kg$\cdot$K)}
+	\nomenclature[S]{h}{hypothetical}
+	\nomenclature[S]{mt}{metal}
+	\nomenclature[A]{NHV}{Net Heating Value, kJ/kmol}
+	
+	where $NHV$ stands for Net Heating Value, $z_{mt}$ for the mass fraction of metal impurities, $e^{ch}_{mt}$ for the corresponding chemical exergy and $\beta$ for the chemical exergy correction factor.
+
+	\nomenclature[G]{$\beta$}{chemical exergy correction factor}
+	
+Kinetic and potential contributions on the flow exergies were assumed to be negligible toward physical and chemical exergies. Exergy transported with work is equal to its energy and depends on the system and environmental temperatures when it is transferred with heat.
+
+\subsubsection{Transit exergy}
+
+The transiting exergy associated with a stream of matter is defined as the sum of the transiting physical, chemical, potential and kinetic exergies. The transiting physical exergy for a stream $j$ is the minimum physical exergy between the inlet and outlet of the system. It is defined, for an input and output temperature higher than the environment temperature, as:
+
+\begin{equation}
+\dot{E}^{ph}_{tr} = \sum_j \dot{m}_{j,tr}\cdot\text{min}(e^{ph}_{in}(p_{in},T_{min});e_{in}^{ph}(p_{out},T_{min});e_{o}^{ph}(p_{in},T_{min});e_{out}^{ph}(p_{out},T_{min}))
+\end{equation}
+\nomenclature[S]{min}{minimum} 
+
+Similarly, the transiting chemical exergy corresponds to the chemical exergies of each chemical compound that is not transformed between the system inlet and outlet:
+
+\begin{equation}
+\dot{E}^{ch}_{tr} = \sum_s \dot{n}_{tr,s}\cdot\text{min}(\bar{e}^{ch}_i,\bar{e}^{ch}_o)
+\end{equation}
+\nomenclature[S]{j}{stream}
+
+The transiting exergies of an energy flow are defined as the minimum associated exergies at the inlet or outlet of the system. The concept of transiting exergy is also mentioned by Cornelissen \cite{Cornelissen1997}, who applied this method to an air separation unit and a crude oil distillation plant. The lack of ambiguity and the complexity of the calculations were underlined, as this method requires a precise decoupling of the exergy flows into their components.
+	
+%%%%%%%%% SECTION: THEORY: EXERGETIC EFFICIENCY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Exergetic efficiency}
+
+The definitions of exergetic efficiency, as presented and discussed in the open literature, can be divided into two main groups, as suggested by Lior and Zhang \cite{Lior2007}:
+
+\begin{itemize}
+	\item the \emph{`total'}, \emph{`overall'}, \emph{`input-output'} or \emph{`universal'} exergetic efficiency, which is defined as the ratio of all outgoing to ingoing exergy flows, without any consideration on whether they are actually consumed within the process or useful to the owner of the system;
+	\item the \emph{`task'}, \emph{`utilitarian'}, \emph{`consumed-produced'}, or \emph{`functional'} \textbf{(rational?)} exergetic efficiency, which is defined as the ratio of the exergy terms associated with the products generated within the system, i.e. the \emph{`produced exergy'}, to the exergy terms associated with the resources expended to achieve these outputs, i.e. the \emph{`consumed exergy'}.
+\end{itemize}
+
+\subsubsection{Total exergetic efficiency}
+
+For a given open thermodynamic system at steady-state, the exergy balance can be expressed as:
+\begin{equation}
+	\sum \dot{E}_{in} = \sum \dot{E}_{out}+\dot{E}_d = \sum \dot{E}_{out,u} + \sum \dot{E}_{out,l} + \dot{E}_d
+\end{equation}
+where $\dot{E}_{in}$ and $\dot{E}_{out}$ are the exergy inputs and outputs to and from the system, associated with streams of matter and of energy, and $\dot{E}_d$ the exergy destruction. The exergy output consists of useful exergy output, $\dot{E}_{out,u}$, and exergy that is lost (i.e. the exergy of waste products that is not taken into use, but discharged to the environment), $\dot{E}_{out,l}$.
+
+The \emph{`total'} exergetic efficiency $\varepsilon_t$ is defined as the ratio of all exergy outflows to inflows \cite{Cornelissen1997,Lior2007,Wall2004}:
+\begin{equation}
+	\varepsilon_t \equiv \frac{\sum \dot{E}_{out}}{\sum \dot{E}_{in}} = 1-\frac{\dot{E}_d}{\sum \dot{E}_{in}}
+\end{equation}
+where some authors exclude the exergy associated with waste products \cite{Fratzscher1986,Wall2004}:
+\begin{equation}
+	\varepsilon_t \equiv \frac{\sum \dot{E}_{out,u}}{\sum \dot{E}_{in}} = 1-\frac{\dot{E}_{out,l}+\dot{E}_d}{\sum \dot{E}_{in}}
+\end{equation} 
+
+The \emph{'total'} exergetic efficiency is claimed to be adequate when (i) the ingoing and outgoing exergy flows are converted to other forms of exergy \cite{Cornelissen1997} or (ii) a major part of the outflowing exergy can be considered as useful, as it is the case of power plants \cite{Lior2007} or (iii) for dissipative processes and devices \cite{Moran1989,Kotas1995}. 
+
+ 
+\subsubsection{Task exergetic efficiency}
+
+The concept of \emph{`total'} exergetic efficiency has been criticised as it takes into account all the exergetic flows entering and exiting a system, without considering whether they are utilised in the thermodynamic conversions. The \emph{`task'} exergetic efficiency, on the opposite, differentiates the exergy flows undergoing transformations from the exergy flows that are not affected, i.e. neither used nor produced. Grassmann \cite{Grassmann1950} proposed a general formulation for an exergetic efficiency: he suggested the ratio of the intended increase to the used decrease in ability to do work. In exergy terms, this means that the exergetic efficiency should be defined as the ratio of the production of exergy that is desired $\Delta \dot{E}^+$ to the reduction of exergy that is utilised $\Delta \dot{E}^-$.
+
+\begin{equation}
+	\varepsilon \equiv \frac{\Delta \dot{E}^+}{\Delta \dot{E}^-}
+\end{equation}
+
+It was emphasised that this performance criterion always has a value comprised between 0 and 1, as the increased ability to do work $\Delta \dot{E}^+$ is always smaller than the decreased one $\Delta \dot{E}^-$. Baehr \cite{Baehr1968} proposed a variant of this formulation, considering \emph{all} the exergy increases $\Delta \dot{E}^+_t$ in the numerator and \emph{all} the exergy decreases $\Delta \dot{E}^-_t$ in the denominator. At the difference of the expression proposed by Grassmann \cite{Grassmann1950}, the total production and expenditure of exergy are considered, whether they are actually desired or utilised within the system:
+
+\begin{equation}
+	\varepsilon \equiv \frac{\Delta \dot{E}^+_{tot}}{\Delta \dot{E}^-_{tot}}
+\end{equation}
+
+\nomenclature[P]{+}{increase}
+\nomenclature[P]{-}{decrease} 
+\nomenclature[S]{tot}{total} 
+\nomenclature[S]{cv}{control volume} 
+It was pointed up that (i) exergetic efficiencies based on exergy differences are more sensitive to changes in the system and are therefore more suitable and (ii) different numerical values could be obtained with the formulation of exergetic efficiency proposed by Grassmann \cite{Grassmann1950}, as it depends on whether an exergy difference is considered as \emph{`useful'}, \emph{`used'} or none of those.
+
+\nomenclature[S]{tr}{transit}
+
+Brodyansky \cite{Brodyansky1994} and Sorin \cite{Sorin1994} proposed to define the exergetic efficiency as the ratio of the total exergy output to the total exergy input, minus the transit exergy on both numerator and denominator. They named it the \emph{intrinsic exergetic efficiency} and defined it as:
+
+\begin{equation}
+\varepsilon \equiv \frac{\sum \dot{E}_{out}-\sum \dot{E}_{tr}}{\sum \dot{E}_{in}-\sum \dot{E}_{tr}} = \frac{\sum \dot{E}_{pr}}{\sum \dot{E}_u}
+\end{equation}
+
+	where, on a time rate basis, $\dot{E}_{tr}$ the transit exergy, $\dot{E}_{pr}$ and $\dot{E}_{u}$ the produced and used exergies, respectively, as called in the work of Brodyansky et al. \cite{Brodyansky1994}.  
+
+A variant of the previous exergy efficiency formulation is proposed by Sorin et al. \cite{Sorin1998}. It was argued that all the produced exergy $\dot{E}_{pr}$ it not usable, as a result of a discharge of exergy into the environment with waste products (i.e. external exergy losses). They defined therefore an alternative to the intrinsic exergetic efficiency, named the utilisable exergy coefficient, as:
+
+\begin{equation}
+\varepsilon \equiv \frac{\sum \dot{E}_{o}-\sum \dot{E}_{l}-\sum \dot{E}_{tr,u}}{\sum \dot{E}_{i}-\sum \dot{E}_{tr,u}}
+\end{equation}
+
+ Szargut \cite{Szargut1980,Szargut1988,Szargut1998}, Tsatsaronis \cite{Tsatsaronis1985} and Kotas \cite{Kotas1980a,Kotas1995} argued that the exergetic efficiency should be defined as the ratio of (i) the \emph{desired output} or \emph{useful exergetic effect} $\sum \Delta \dot{E}_{out}$ and (ii) the \emph{necessary input} or \emph{driving exergy expense} $\sum \Delta \dot{E}_{in}$. Both terms can be identified starting from the exergy balance put in the following form:
+
+\begin{equation}
+	\sum \Delta \dot{E}_{in}=\sum \Delta \dot{E}_{out}+\dot{I}_{cv}
+\end{equation} 
+ 
+	where $\dot{I}_{cv}$ is defined as the irreversibilities taking place within the control volume under consideration, on a rate form. Hence, the proposed efficiency, named `rational' efficiency, is defined, for any system for which a useful output can be expressed in terms of exergy \cite{Kotas1980a,BejanAdrian;TsatsaronisGeorge;Moran1996}, as: 
+ 
+ \begin{equation}
+	\varepsilon \equiv \frac{\sum \Delta \dot{E}_{out}}{\sum \Delta \dot{E}_{in}}
+\end{equation}
+ 
+Using the nomenclature proposed by Tsatsaronis \cite{Tsatsaronis2007}, the rational exergetic efficiency, or simply called the \emph{`exergy efficiency'} in the works of Moran \cite{Moran1989,Moran2007}, Lazzaretto \cite{Lazzaretto1999,Lazzaretto2006} and Valero \cite{Valero1987} can be written as:
+
+\begin{equation}
+	\varepsilon \equiv \frac{\dot{E}_p}{\dot{E}_f} = 1-\frac{\dot{E}_l+\dot{E}_d}{\dot{E}_f}
+\end{equation} 
+
+%%%%%%%%% SECTION: EFFICIENCIES FOR OIL AND GAS PLATFORMS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \section{Exergetic efficiency for oil and gas platforms}
+ \label{sec:efficiency}
+ 
+As described in \emph{Section~\ref{sec:system_description}}, we use three different control volumes when analysing an oil platform; the utility plant, the processing plant and the overall plant. In this section we establish the exergy balance for each of these control volumes and derive expressions for exergetic efficiency. For the utility plant the \emph{`total'} exergetic efficiency is suitable, but for the processing plant and overall plant, the formulation of exergetic efficiency is not straightforward. This is due to (i) high transit chemical (and sometimes also physical) exergy and (ii) high variety in process conditions and product specifications among the platforms. \textbf{(more?)} For these two control volumes we have found several different expressions for the exergetic efficiencies for similar systems in the literature \cite{Oliveira1997,Cornelissen1997,Voldsund2010,Voldsund2012,Voldsund2013,Rian2012,Thermoeconomics2001}. 
+
+\textbf{For both the \emph{`total'} exergetic efficiency and the \emph{`task'} exergetic efficiency some authors have included all product or all output flows, while others have only considered the \emph{useful} products or output flows. Note that in this work we will only consider \emph{useful} products or output flows.}
+
+
+%For oil and gas systems where material streams exiting the processing plant are discharged into the environment without any practical use (e.g. produced water, flared and vented gases), the exergy losses are identified as the sum of the exergy discharged to the sea via cooling, the exergy contents of the exhaust gases \emph{and} of the waste streams of the processing plant. \textbf{Merge into the paragraph above.} In some works these streams are also regarded as product streams, while in this work we do not regard these streams as product. 
+
+
+%Due to high transit chemical exergy, the 'input-output' exergetic efficiency will give a number close to 1, that do not give much useful information. 
+
+%Only the formulations of the exergetic efficiencies based on the fuel-product concept are discussed, as the input-output and intrinsic efficiencies are calculated in a systematic way, using the algorithms presented in \emph{Section \ref{sec:background}} \textbf{Direct result of the exergy balances presented in Section~\ref{section:exergy_balances}.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+%\subsection{Exergy balances}
+%\label{section:exergy_balances}
+ 
+%The exergy balance for the processing plant of the oil and gas facility (\emph{Figure \ref{fig:control_volume}}) can be expressed as:
+
+%\begin{equation}
+%	\dot{E}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}=\sum_k\dot{E}_k+\dot{E}^{Q}_{cool}+\dot{E}_{d,PP}
+%\end{equation}
+
+%The left-hand side (LHS) term represents, on a time rate basis, the exergy associated with the feed entering the processing plant (i.e. reservoir fluid) $\dot{E}_{feed}$ and the exergy transfers with the heating medium $\dot{E}^{Q}_{heat}$ and power $\dot{E}^{W}_{UT}$ from the utility plant that are consumed within the separation and treatment modules. The right-hand side (RHS) term denotes the exergy of the outlet streams of the processing plant (i.e. oil, gas, condensate, flared gas, fuel gas, produced water) $\sum_k\dot{E}_k$ and the exergy gain discarded with the cooling medium discharged to the environment $\dot{E}^{Q}_{cool}$. $\dot{E}_{d,PP}$ is the exergy destroyed in the processing plant. 
+
+%\nomenclature[S]{cool}{cooling medium}
+%\nomenclature[S]{feed}{feed}
+%\nomenclature[A]{UT}{Utility Plant}
+%\nomenclature[A]{PP}{Processing Plant}
+%\nomenclature[A]{OP}{Overall Plant}
+%\nomenclature[A]{LHS}{Left-Hand Side}
+%\nomenclature[A]{RHS}{Right-Hand Side}	
+	
+%The exergy balance for the utility plant of the oil and gas facility (\emph{Figure \ref{fig:control_volume}}) can be expressed as:
+	
+%\begin{equation}
+%	\dot{E}_{air}+\dot{E}_{k,fg}=\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}+\dot{E}_{exh}+\dot{E}_{d,UT}
+%\end{equation}
+
+%The left-hand side (LHS) term represents, on a time rate basis, the exergy entering the utility plant that are associated with the air $\dot{E}_{air}$ and fuel gas $\dot{E}_{k,fg}$ from the separation plant. The right-hand side (RHS) term denotes the exergy accompanying the power $\dot{E}^{W}_{UT}$ and heat $\dot{E}^{Q}_{heat}$ produced in the utility plant and $\dot{E}_{exh}$ the exergy rejected into the environment with the exhaust gases. $\dot{E}_{d,UT}$ is the exergy destroyed in the utility plant.
+
+%Hence, for the overall plant, i.e. the combination of the processing and utility plants (\emph{Figure \ref{fig:control_volume}}), the exergy balance becomes:
+
+%\begin{align}
+%	\dot{E}_{feed}+\dot{E}_{air}&=\left(\sum_k\dot{E}_k-\dot{E}_{k,fg}\right)+\dot{E}^{Q}_{cool}+\dot{E}_{exh}+\dot{E}_{d,op} \nonumber\\
+%											&=\left(\sum_{k'}\dot{E}_{k'}\right)+\dot{E}^{Q}_{cool}+\dot{E}_{exh}+\dot{E}_{d,op}
+%\end{align}
+%where $\dot{E}_{d,OP}$ is the sum of the exergy destruction taking place within both plants. 
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\subsection{Exergetic efficiency of the utility plant}
+\label{section:eff_utility}
+
+The exergy balance for the utility plant of the oil and gas facility (\emph{Figure \ref{fig:control_volume}}) can be expressed as:
+	
+\begin{equation}
+	\underbrace{\dot{E}_{air}+\dot{E}_{k,fg}}_{E_{in}}=\underbrace{\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}_{E_{out,u}}+\underbrace{\dot{E}_{exh}}_{E_{out,l}}+\underbrace{\dot{E}_{d,UT}}_{E_d}
+\end{equation}
+The left-hand side term, i.e. the exergy of the air, $\dot{E}_{air}$, and fuel gas from the processing plant, $\dot{E}_{k,fg}$, makes up the exergetic input of the system, $E_{in}$. The right-hand side terms consist of the exergy transfers associated with power, $\dot{E}^{W}_{UT}$, and heat, $\dot{E}^{Q}_{heat}$, which represent the useful exergy output, $E_{out,u}$, and the exergy content of the exhaust gases, $\dot{E}^{Q}_{heat}$, which is lost exergy, $E_{out,l}$, while the rest of the exergy that entered the system is destroyed, $E_d$.
+
+The \emph{`total'} exergetic efficiency is then: 
+\begin{equation}
+	\varepsilon_{UT} =\frac{\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}{\dot{E}_{air}+\dot{E}_{k,fg}}=1-\frac{\dot{E}_{exh}+\dot{E}_{d,UT}}{\dot{E}_{air}+\dot{E}_{k,fg}}
+\end{equation}
+This efficiency is well applicable to gas turbine systems, because the exergy that enters the system is transformed into other exergy types.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Exergetic efficiencies of the processing plant}
+\label{section:eff_processing}
+
+The exergy balance for the processing plant of the oil and gas facility (\emph{Figure \ref{fig:control_volume}}) can be expressed as:
+
+\begin{equation}
+\label{eq:balance_PP}
+	\underbrace{\dot{E}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}_{E_{in}}=\underbrace{\sum_{k,u}\dot{E}_{k,u}}_{E_{out,u}}+\underbrace{\sum_{k,w}\dot{E}_{k,w}+\dot{E}^{Q}_{cool}}_{E_{out,l}}+\underbrace{\dot{E}_{d,PP}}_{E_d}
+\end{equation}
+The left-hand side terms consist of the exergy associated with the feed entering the processing plant (i.e. reservoir fluid), $\dot{E}_{feed}$, and the exergy transfers with the heating medium, $\dot{E}^{Q}_{heat}$, and power, $\dot{E}^{W}_{UT}$, from the utility plant that are consumed within the separation and treatment modules. The right-hand side terms consist of the exergy of the useful outlet material streams of the processing plant (i.e. oil, gas, condensate, fuel gas), $\sum_k\dot{E}_{k,u}$, the wasted outlet material streams (i.e. flared gas, produced water), $\sum_k\dot{E}_{k,w}$, and the exergy lost in the cooling system, $\dot{E}^{Q}_{cool}$. The term $\dot{E}_{d,PP}$ denotes the exergy destroyed in the processing plant. All the left-hand side terms comprise the input exergy, $E_{in}$, while the useful outlet material streams in the right-hand side are counted as useful output exergy, $E_{out,u}$. The \emph{`total'} exergetic efficiency is therefore:  
+
+\begin{equation}
+	\varepsilon_{PP} = \frac{\sum_{k,u}\dot{E}_{k,u}}{\dot{E}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}
+\end{equation}
+This formulation of exergetic efficiency is however not very reasonable for hydrocarbon separation systems, due to the high amount of transiting chemical exergy \textbf{reference}.
+
+\nomenclature[S]{cool}{cooling medium}
+\nomenclature[S]{feed}{feed}
+\nomenclature[A]{UT}{Utility Plant}
+\nomenclature[A]{PP}{Processing Plant}
+\nomenclature[A]{OP}{Overall Plant}
+\nomenclature[A]{LHS}{Left-Hand Side}
+\nomenclature[A]{RHS}{Right-Hand Side}	
+
+The three different formulations of a \emph{`task'} exergetic efficiency found for similar systems are summarised in Table~\ref{tab:concept_efficiencies} and each of them are derived below.
+
+\begin{table*}[hb]
+\centering
+\begin{tabular}{lcc}
+\hline	
+ System 				& Fuel 																& Product  \\
+\hline
+Oil platform  & Added heat and work 								& Physical and chemical exergy increase \\
+\\
+ LNG plant 		& Added heat and work  								& Chemical exergy increase 	\\
+							& + input physical exergy 						& + output physical exergy \\
+\\
+ Distillation  & Added heat and work  								& Chemical exergy increase 	\\
+	column				& + physical exergy decreases 				& + physical exergy increases \\
+\hline
+\end{tabular}
+\caption{The concept of three definitions of exergetic efficiency found in the litereature for systems similar to oil and gas platforms.}
+\label{tab:concept_efficiencies}
+\end{table*}
+
+
+\subsubsection{Product: difference in material streams}
+ 	
+The exergy balance for the processing plant, Eq.~\ref{eq:balance_PP}, can be rewritten as:
+
+\begin{equation}
+	\underbrace{\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}_{E_f}=\underbrace{\left(\sum_k\dot{E}_k-\dot{E}_{feed}\right)}_{E_p}+\underbrace{\dot{E}^{Q}_{cool}}_{E_l} + \underbrace{\dot{E}_{d,PP}}_{E_d}
+\end{equation}
+The left-hand side term can be identified as the resources required to drive the processing plant, i.e. exergetic fuel, $E_f$, while on the right-hand side the exergy increase in the material streams (physical and chemical) can be identifed as the exergetic product, $E_p$, the exergy lost with the coolin water can be identified as the exergy losses, $E_l$ and the rest is the destructed exergy, $E_d$. 
+
+The expression for the exergetic efficiency is then given by:
+\begin{equation}
+	\varepsilon_{PP}=\frac{\sum_k\dot{E}_k-\dot{E}_{feed}}{\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}=1-\frac{\dot{E}^{Q}_{cool}+\dot{E}_{d,PP}}{\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}
+\end{equation}
+which is similar to the expression of the rational efficiency for a generalised separation plant, as proposed by Kotas \cite{Kotas1995} and used for the processing plant of an oil platform by Voldsund et al. \cite{Voldsund2010,Voldsund2012,Voldsund2013}. 
+
+\textbf{(Does not distinguish between useful and lost material streams.)}
+
+	
+\subsubsection{Fuel: also physical exergy in, Product: separation work and physical exergy out}
+
+Alternatively, it can be differentiated between physical and chemical exergy in the material streams, and for the physical exergy, instead of considering the increase as product, the physical exergy input can be counted as fuel exergy while physical exergy of the useful output can be counted as product exergy. By splitting the exergy associated to each stream of matter into physical and chemical exergy in Eq.~\ref{eq:balance_PP} and rewriting, we obtain:
+
+%Kotas \cite{Kotas1995} proposed in the same work an alternative to this expression, arguing that the exergy associated with the mixture may be high enough to perform the separation process. He proposed to differentiate the exergetic input of the mixture and the exergy output of the separated streams and to consider them as as fuel and product, respectively. This approach is also used in the works of Cornelissen \cite{Cornelissen1997} and of Rian and Ertesv\aa g \cite{Rian2012}. 
+
+%The flowing exergy associated to each stream of matter can be split into physical exergy and chemical exergies:
+
+%\begin{equation}
+%	\dot{E}^{ph}_{feed}+\dot{E}^{ch}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}=\sum_k\dot{E}^{ph}_k+\sum_k\dot{E}^{ch}_k+\dot{E}^{Q}_{cool}+\dot{E}_{d,PP}
+%\end{equation}
+
+%Hence, the exergetic balance can be rewritten as:
+
+\begin{align}
+	\underbrace{\dot{E}^{ph}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}_{E_f}= &\sum_k\dot{E}^{ch}_k - \dot{E}^{ch}_{feed} + \sum_k\dot{E}^{ph}_{k,u} + \sum_k\dot{E}^{ph}_{k,w} + \dot{E}^{Q}_{cool}+\dot{E}_{d,PP} \nonumber \\
+																						  =&\underbrace{\Delta E^{ch} + \sum_{k,u}\dot{E}^{ph}_{k,u}}_{E_p}+\underbrace{\sum_{k,w}\dot{E}^{ph}_{k,w} + \dot{E}^{Q}_{cool}}_{E_l}+\underbrace{\dot{E}_{d,PP}}_{E_d}	
+\end{align}
+
+The exergetic fuel is now taken to be the sum of the exergy transferred as heat and power and the physical exergy of the feed. Similarly, the exergetic product is now taken as the difference of chemical exergies between the inlet and outlets of the processing plant as well as the physical exergy of the useful output streams. The expression for the exergetic efficiency of the system is then given by:
+
+\begin{equation}
+	\varepsilon_{PP} =\frac{\Delta E^{ch} + \sum_{k,u}\dot{E}^{ph}_{k,u}}{\dot{E}^{ph}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}=1-\frac{\sum_{k,w}\dot{E}^{ph}_{k,w} + \dot{E}^{Q}_{cool}+\dot{E}_{d,PP}}{\dot{E}^{ph}_{feed}+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}
+\end{equation}
+which is similar to the expression of the rational efficiency for a crude oil distillation plant and a natural gas liquefaction facility, as proposed respectively by Kotas \cite{Kotas1995} and by Rian and Ertesv\aa g \cite{Rian2012}.
+
+
+
+\subsubsection{Fuel: also exergy decrease, Product: also exergy increase}
+
+In the third alternative formulation of the \emph{`task'} exergetic efficiency, the fuel exergy is defined as the sum of the physical exergy decreases between the inflowing feed and the separated streams with a lower specific physical exergy ($k^{-}$) and the exergy associated with heating and power. The product exergy is defined as the sum of the physical exergy increases between the inflowing feed and the separated useful products with a higher specific physical exergy ($k^{+}$) and the chemical exergy increases between the feed and products. By separating between product streams with increased and decreased specific physical exergy, Eq.~\ref{eq:balance_PP} can be rewritten:
+
+\begin{equation}
+\underbrace{\sum_{k^{-}} \dot{m}_{k^{-}}\cdot(e_{feed}^{ph}-e_{k^{-}}^{ph})+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}_{E_f}=\underbrace{\Delta E^{ch} + \sum_{k^{+},u}\dot{m}_{k^{+},u}\cdot(e_{k^{+},u}^{ph}-e_{feed}^{ph})}_{E_p}+\underbrace{\sum_{k^{+},w}\dot{m}_{k^{+},w}\cdot(e_{k^{+},w}^{ph}-e_{feed}^{ph}) + \dot{E}^{Q}_{cool}}_{E_l}+\underbrace{\dot{E}_{d,PP}}_{E_d}	
+\end{equation}
+
+The expression for the exergetic efficiency of this system is then given by:
+
+\begin{equation}
+	\varepsilon_{PP} =\frac{\Delta E^{ch} + \sum_{k^{+},u}\dot{m}_{k^{+},u}\cdot(e_{k^{+},u}^{ph}-e_{feed}^{ph})}{\sum_{k^{-}} \dot{m}_{k^{-}}\cdot(e_{feed}^{ph}-e_{k^{-}}^{ph})+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}=1-\frac{\sum_{k^{+},w}\dot{m}_{k^{+},w}\cdot(e_{k^{+},w}^{ph}-e_{feed}^{ph}) + \dot{E}^{Q}_{cool}+\dot{E}_{d,PP}}{\sum_{k^{-}} \dot{m}_{k^{-}}\cdot(e_{feed}^{ph}-e_{k^{-}}^{ph})+\dot{E}^{Q}_{heat}+\dot{E}^{W}_{UT}}
+\end{equation}
+which is similar to the expression of the exergetic efficiency for a generalised distillation column, as discussed by Tsatsaronis and Cziesla \cite{Thermoeconomics2001}, and can be obtained by using the SPECO method proposed by Lazzaretto and Tastsaronis \cite{Lazzaretto1999,Lazzaretto2006}.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Component-by-component exergetic efficiency}
+\textbf{Explain the concept. For each product stream several feed streams. Exergy balance.}
+
+The exergetic efficiency can be expressed:
+\begin{equation}
+\varepsilon \equiv \frac{\sum_i{ \sum_j \sum_{k+} \dot{n}_{i,j,k+}\left( \hat{e}^{\mathrm{ph}}_{i,k+} - \hat{e}^{\mathrm{ph}}_{i,j} \right)} + \Delta \dot{E}^{\mathrm{ch}}}{\sum_i \sum_j \sum_{k-} \dot{n}_{i,j,k-} \left( \hat{e}^{\mathrm{ph}}_{i,j} - \hat{e}^{\mathrm{ph}}_{i,k-} \right) + \dot{E}^{W}_{UT} + \dot{E}^{Q}_{heat}},
+\end{equation}
+Subscript $i$ denotes component $i$, subscript $j$ denotes feed stream $j$, and here subscript $k+$ denotes a product stream where the partial molar physical exergy of component $i$ is higher than in the feed stream $j$, while oppositely subscript $k-$ denotes a product stream where the partial molar physical exergy of component $i$ is lower than in feed stream $j$.  
+\textbf{partial molar physical exergy}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+	
+\subsection{Exergetic efficiencies for the overall plant}
+\label{section:eff_overall}
+
+Hence, for the overall plant, i.e. the combination of the processing and utility plants (\emph{Figure \ref{fig:control_volume}}), the exergy balance becomes:
+
+\begin{align}
+	\dot{E}_{feed}+\dot{E}_{air}&=\left(\sum_k\dot{E}_k-\dot{E}_{k,fg}\right)+\dot{E}^{Q}_{cool}+\dot{E}_{exh}+\dot{E}_{d,op} \nonumber\\
+											&=\left(\sum_{k'}\dot{E}_{k'}\right)+\dot{E}^{Q}_{cool}+\dot{E}_{exh}+\dot{E}_{d,op}
+\end{align}
+where $\dot{E}_{d,OP}$ is the sum of the exergy destruction taking place within both plants. 
+
+
+
+`Fuel-product' exergy efficiencies require particular attention on the definition of the \emph{purpose} of the system. The objective of an oil and gas platform can be seen as to separate the inflowing feed into its oil, gas and water fractions and to deliver them at a given temperature and pressure level. In this regard, a fraction of the feed is consumed onsite to perform the separation work and to reach the desired specifications. 
+
+
+
+Hence, the exergy balance of the overall plant can be rewritten as:
+
+\begin{equation}
+	\dot{E}_{feed}+\dot{E}_{air}=\left(\sum_{ku}\dot{E}_{ku}+\sum_{kw}\dot{E}_{kw}\right)+\dot{E}^{Q}_{cool}+\dot{E}_{exh}+\dot{E}_{d,OP}
+\end{equation}
+where the indice $ku$ indicates the streams resulting from the feed separation that are considered as useful (e.g. export, injection, lift) by opposition to the streams $kw$ that are rejected to the environment and wasted. Accordingly, the physical and chemical exergies associated with these streams are accounted as losses.
+	
+\subsubsection{Product: difference in material streams}
+	
+The exergy balance becomes, following the reasoning of Kotas \cite{Kotas1995}, Oliveira and Van Hombeeck \cite{Oliveira1997}:
+
+\begin{align}
+	\underbrace{\underbrace{\dot{E}_{air}+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}}_{E_f'}+\underbrace{\sum_{kw}\sum_i \dot{n}_{i,kw}(\bar{e}_{i,feed})}_{E_f''}}_{E_f}=\underbrace{\sum_{ku}\left(\Delta \dot{E}_{ku}\right)}_{E_p}+\underbrace{\sum_{kw} \dot{E}_{kw}+\dot{E}^{Q}_{cool}+\dot{E}_{exh}}_{E_l}+\underbrace{\dot{E}_{d,OP}}_{E_d}
+\label{eq:oliveira_losses}
+\end{align}
+
+\emph{Term $E_f''$} is the exergy rate, both physical and chemical, of the components \emph{in the feed} that enter the platform and are discharged into the environment as waste. They correspond to the additional resources required within the system to provide the desired products and that are paid to compensate for the external losses. The overall \emph{Term $E_f$} represents \emph{all} the resources expended to generate the desired product, i.e. the fuel exergy.
+
+\subsubsection{Fuel: also physical exergy in, Product: separation work and physical exergy out}
+
+Following the reasonings of Kotas \cite{Kotas1995}, Cornelissen \cite{Cornelissen1997} and Rian and Ertesv\aa g \cite{Rian2012}:
+
+\begin{align}
+		&\underbrace{\underbrace{\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}}_{E_f'}+\underbrace{\sum_{kw}\sum_i \dot{n}_{i,kw}(\bar{e}^{ch}_{i,feed})}_{E_f''}}_{E_f} \nonumber\\
+		&=\underbrace{\sum_{ku}\left(\dot{E}^{ph}_{ku}+\Delta{\dot{E}}^{ch}_{ku}\right)}_{E_p}+\underbrace{\sum_{kw} \dot{E}_{kw}+\dot{E}_{exh}+\dot{E}^Q_{cool}}_{E_l}+\underbrace{\dot{E}_{d,OP}}_{E_d}
+\label{eq:rian_losses}
+\end{align}
+
+
+\subsubsection{Fuel: also exergy decrease, Product: also exergy increase}
+
+And, following the reasoning of Lazzaretto and Tsatsaronis \cite{Lazzaretto1999,Lazzaretto2006}:
+
+ \begin{align}
+	&\underbrace{\underbrace{\sum_{ku^{-}} \dot{m}_{ku^{-}}\cdot(e_{feed}^{ph}-e_{ku^{-}}^{ph})+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}_{E_f'}+\underbrace{\sum_{kw}\sum_i \dot{n}_{i,kw}(\bar{e}_{i,feed})}_{E_f''}}_{E_f} \nonumber\\
+	&=\underbrace{\sum_{ku^{+}}\dot{m}_{ku^{+}}\cdot(e_{ku^{+}}^{ph}-e_{feed}^{ph})+\sum_{ku'}\Delta{\dot{E}}^{ch}_{ku'}}_{E_p}+\underbrace{\sum_{kw} \dot{E}_{kw}+\dot{E}_{exh}+\dot{E}^Q_{cool}}_{E_l}+\underbrace{\dot{E}_{d,OP}}_{E_d}
+	\label{eq:speco_losses}
+\end{align}	
+
+The main differences between Eqs.(\ref{eq:oliveira_nolosses}--\ref{eq:speco_nolosses}) and Eqs.(\ref{eq:oliveira_losses}--\ref{eq:speco_losses}) lie in the accountings of (i) the exergetic fuel, which contains a term related to the extra resouces paid by the owner of the system to generate the desired exergetic product, (ii) the exergetic product, which comprises only the useful exergetic effects associated with the streams not discharged as waste and (iii) the exergetic losses, which increase due to the non-use of some of the effluent streams exiting the processing plant. 
+
+
+
+\subsubsection{Auxiliary formulations}
+
+
+ 
+\begin{itemize}
+	\item based on the considerations on fuel and product exergies, as presented in Lazzaretto and Tsatsaronis \cite{Lazzaretto1999,Lazzaretto2006}, the fuel exergy \emph{Term I} consists of the chemical exergy of the fraction of the feed that goes to the utility plant, the air processed in the gas turbines and the decreases of thermal and mechanical exergy between the inlet and outlet of the system. The product exergy (\emph{Term II}) consists of the increases of chemical and mechanical exergies. Conversely, the increases of the thermal exergies are included in the exergy losses (\emph{Term III}), as they are not useful to the owner of the system and are dissipated via heat losses in further oil and gas processing.
+\end{itemize}
+
+\begin{align}
+	&\underbrace{\sum_{ku^{m-}} \dot{m}_{ku^{m-}}\cdot(e_{feed}^{m}-e_{ku^{m-}}^{m})+\sum_{ku^{t-}} \dot{m}_{ku^{m-}}\cdot(e_{feed}^{t}-e_{ku^{t-}}^{t})+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}_{E_f'}\nonumber\\
+	&+\underbrace{\sum_{kw}\sum_i \dot{n}_{i,kw}(\bar{e}_{i,feed})}_{E_f''}\nonumber\\
+	&=\underbrace{\sum_{ku'}\Delta{\dot{E}}^{ch}_{ku'}+\sum_{ku^{m+}}\dot{m}_{ku^{+}}\cdot(e_{ku^{m+}}^{m}-e_{feed}^{m})}_{E_p}+\underbrace{\sum_{ku^{t+}}\dot{m}_{ku^{t+}}\cdot(e_{ku^{t+}}^{t}-e_{feed}^{t})+\sum_{kw} \dot{E}_{kw}+\dot{E}_{exh}+\dot{E}^Q_{cool}}_{E_l} \nonumber\\
+	&+\underbrace{\dot{E}_{d,OP}}_{E_d}
+	\label{eq:speco_pressure}
+\end{align}	
+
+	where the subscripts $ku^{m+}$, $ku^{t+}$, $ku^{m-}$, $ku^{t-}$ refer to the useful streams exiting the oil and gas platform with, respectively, a greater mechanical, greater thermal, smaller mechanical and a smaller thermal specific exergy.
+
+For oil and gas systems receiving or delivering exergy that is transferred with power, e.g. interconnected platforms, the associated exergy rates are added to the fuel term if power is received and to the product term is delivered. Similarly, if gas and injection seawater are imported or exported to another oil and gas facility, as it is the case of several platforms located in the North Sea region, the corresponding exergy flows are considered either in the required resources to expend by the owner or in the desired products.  
+
+\subsection{Summary of the definitions}
+
+The exergy-based efficiencies of the total plant can therefore be grouped as the input-output and the consumed-produced efficiencies (\emph{Table \ref{tab:efficiency}}). $\varepsilon_{I,1}$ and $\varepsilon_{I,2}$ denote the input-output exergy efficiencies, as discussed in the works of Nesselmann \cite{Nesselmann1953,Nesselmann1952}, Baehr \cite{Baehr1968}, and Fratzscher \cite{Fratzscher1986}. $\varepsilon_{II,1}$ and $\varepsilon_{II,2}$ denote the consumed-produced exergy efficiencies that are based on the concept of transit exergy and proposed by Brodyansky \cite{Brodyansky1994} and Sorin \cite{Sorin1994}. $\varepsilon_{II,3}$, $\varepsilon_{II,4}$ and $\varepsilon_{II,5}$ denote the consumed-produced exergy efficiencies that are based on the concept of fuel-product, with the application of possible interpretations that were also found in the literature \cite{Kotas1995,Oliveira1997,Voldsund2010,Voldsund2012,Lazzaretto1999,Lazzaretto2006,Cornelissen1997,Rian2012}. $\varepsilon_{II,6}$ and $\varepsilon_{II,7}$ are extensions of $\varepsilon_{II,4}$ and $\varepsilon_{II,5}$, decomposing the physical and chemical exergies into their components.
+
+\begin{table*}[htbp]
+\scriptsize
+  \centering
+  \caption{Exergy-based efficiencies for oil and gas platforms}
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llll}
+    \toprule
+          & Input-Fuel  & Output-Product & Efficiency \\
+	\toprule
+	$\varepsilon_{I,1}$ & $\dot{E}_{feed}+\dot{E}_{air}$ & $\sum_{k'}\dot{E}_{k'}+\dot{E}_{exh}+\dot{E}^Q_{CW}$ & $\frac{\sum_{k'}\dot{E}_{k'}+\dot{E}_{exh}+\dot{E}^Q_{CW}}{\dot{E}_{feed}+\dot{E}_{air}}$ \\
+    & & & \\	  
+	$\varepsilon_{I,2}$ & $\dot{E}_{feed}+\dot{E}_{air}$ & $\sum_{k'}\dot{E}_{k'}$ & $\frac{\sum_{k'}\dot{E}_{k'}}{\dot{E}_{feed}+\dot{E}_{air}}$ \\
+    & & & \\	  
+	$\varepsilon_{II,1}$ & $\dot{E}_{feed}+\dot{E}_{air}-\dot{E}_{tr}$ & $\sum_{k'} \dot{E}_{k'}+\dot{E}_{exh}+\dot{E}^Q_{CW}-\dot{E}_{tr}$ & $\frac{\sum_{k'} \dot{E}_{k'}-\dot{E}_{tr}}{\dot{E}_{feed}+\dot{E}_{air}-\dot{E}_{tr}}$ \\
+    & & & \\
+	$\varepsilon_{II,2}$ & $\dot{E}_{feed}+\dot{E}_{air}-\sum \dot{E}_{tr,u}$& $\sum_{k'} \dot{E}_{k'}-\sum \dot{E}_{tr,u}$ & $\frac{\sum_{k'} \dot{E}_{k'}-\sum \dot{E}_{tr,u}}{\dot{E}_{feed}+\dot{E}_{air}-\sum \dot{E}_{tr,u}}$ \\
+    & & & \\
+    $\varepsilon_{II,3}$ & $\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}$ & $\sum_{k'}\Delta\dot{E}_{k'}$ & $\frac{\sum_{k'}\Delta\dot{E}_{k'}}{\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}$ \\
+	& & & \\
+	$\varepsilon_{II,4}$ & $\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}$   &  $\sum_{k'}\left(\dot{E}^{ph}_{k'}+\Delta{\dot{E}}^{ch}_{k'}\right)$ & $\frac{\sum_{k'}\left(\dot{E}^{ph}_{k'}+\Delta{\dot{E}}^{ch}_{k'}\right)}{\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}}$ \\
+	& & & \\
+	$\varepsilon_{II,5}$ & $\sum_{k^{-}} \dot{m}_{k^{-}}\cdot(e_{feed}^{ph}-e_{k^{-}}^{ph})$ & $\sum_{k^{+}}\dot{m}_{k^{+}}\cdot(e_{k^{+}}^{ph}-e_{feed}^{ph})$ & $\frac{\sum_{k^{+}}\dot{m}_{k^{+}}\cdot(e_{k^{+}}^{ph}-e_{feed}^{ph})+\sum_{k'}\Delta{\dot{E}}^{ch}_{k'}}{\sum_{k^{-}} \dot{m}_{k^{-}}\cdot(e_{feed}^{ph}-e_{k^{-}}^{ph})+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}$ \\
+	& $+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}$ & $+\sum_{k'}\Delta{\dot{E}}^{ch}_{k'}$ & \\ 	
+	& & & \\
+	$\varepsilon_{II,6}$ & $\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}$ & $\sum_{k'}\left(\dot{E}^{m}_{k'}+\Delta{\dot{E}}^{ch}_{k'}\right)$ & $\frac{\sum_{ku}\left(\dot{E}^{m}_{k'}+\Delta{\dot{E}}^{ch}_{k'}\right)}{\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}}$ \\ 	
+	& & & \\
+	$\varepsilon_{II,7}$ & $\sum_{k'^{m-}} \dot{m}_{k'^{m-}}\cdot(e_{feed}^{m}-e_{k'^{m-}}^{m})$
+	& $\sum_{k'^{+}}\dot{m}_{k'^{m+}}\cdot(e_{k'^{+}}^{m}-e_{feed}^{m})$ & $\frac{\sum_{k'^{m+}}\dot{m}_{k'^{m+}}\cdot(e_{k'^{+}}^{m}-e_{feed}^{m})+\sum_{k'}\Delta{\dot{E}}^{ch}_{k'}+\dots}{\sum_{k'^{m-}} \dot{m}_{k'^{m-}}\cdot(e_{feed}^{m}-e_{k'^{m-}}^{m})\cdot(e_{feed}^{t}-e_{k'^{t-}}^{t})+\dots}$ \\
+	&$+\sum_{k'^{t-}} \dot{m}_{k'^{m-}}\cdot(e_{feed}^{t}-e_{k'^{t-}}^{t})$ & $+\sum_{k'}\Delta{\dot{E}}^{ch}_{k'}$ & $\frac{\sum_{k'^{t-}} \dot{m}_{k'^{m-}} \cdot(-e_{k'^{m-}}^{m}+e_{feed}^{m})}{\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}$ \\
+	&$+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}$ & & \\
+	\bottomrule
+    \end{tabular*}%
+  \label{tab:efficiency}%
+\end{table*}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+
+

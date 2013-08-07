@@ -1,0 +1,520 @@
+\begin{thebibliography}{63}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\eprint}[1]{\href{http://arxiv.org/abs/#1}{\path{#1}}}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\BIBand}{and}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\undefined \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Inproceedings
+\bibitem[{Svalheim(2002)}]{Svalheim2002}
+\bibinfo{author}{Svalheim\xfnm[ S.M.]}.
+\newblock \bibinfo{title}{{Environmental Regulations and Measures on the
+  Norwegian Continental Shelf}}.
+\newblock In: \bibinfo{booktitle}{Proceedings of the SPE International
+  Conference on Health, Safety and Environment in Oil and Gas Exploration and
+  Production}. \bibinfo{address}{Kuala Lumpur, Malaysia}:
+  \bibinfo{publisher}{Society of Petroleum Engineers}; \bibinfo{year}{2002}, p.
+  \bibinfo{pages}{1--10 (Paper SPE 73982)}.
+%Type = Inproceedings
+\bibitem[{Svalheim and King(2003)}]{Svalheim2003}
+\bibinfo{author}{Svalheim\xfnm[ S.M.]}, \bibinfo{author}{King\xfnm[ D.C.]}.
+\newblock \bibinfo{title}{{Life of Field Energy Performance}}.
+\newblock In: \bibinfo{booktitle}{Proceedings of the SPE Offshore Europe
+  Conference}. \bibinfo{number}{July}; \bibinfo{address}{Aberdeen, United
+  Kingdom}: \bibinfo{publisher}{Society of Petroleum Engineers};
+  \bibinfo{year}{2003}, p. \bibinfo{pages}{1--10 (Paper SPE 83993)}.
+%Type = Article
+\bibitem[{Rivero(2002)}]{Rivero2002}
+\bibinfo{author}{Rivero\xfnm[ R.]}.
+\newblock \bibinfo{title}{{Application of the exergy concept in the petroleum
+  refining and petrochemical industry}}.
+\newblock \bibinfo{journal}{Energy Conversion and Management}
+  \bibinfo{year}{2002};\bibinfo{volume}{43}(\bibinfo{number}{9-12}):\bibinfo{pages}{1199--1220}.
+%Type = Article
+\bibitem[{Nesselmann(1952)}]{Nesselmann1952}
+\bibinfo{author}{Nesselmann\xfnm[ K.]}.
+\newblock \bibinfo{title}{{\"Uber den thermodynamischen Begriff der
+  Arbeitsf\"{a}higkeit}}.
+\newblock \bibinfo{journal}{Allgemeine W\"{a}rmetechnik}
+  \bibinfo{year}{1952};\bibinfo{volume}{3}(\bibinfo{number}{5--6}):\bibinfo{pages}{97--104}.
+%Type = Article
+\bibitem[{Fratzscher and Beyer(1981)}]{Fratzscher1981}
+\bibinfo{author}{Fratzscher\xfnm[ W.]}, \bibinfo{author}{Beyer\xfnm[ J.]}.
+\newblock \bibinfo{title}{{Stand und Tendenzen bei der Anwendung und
+  Witerentwicklung des Exergiebegriffs}}.
+\newblock \bibinfo{journal}{Chemische Technik}
+  \bibinfo{year}{1981};\bibinfo{volume}{33}(\bibinfo{number}{1}):\bibinfo{pages}{1--10}.
+%Type = Book
+\bibitem[{Fratzscher et~al.(1986)Fratzscher, Brodjanskij and
+  Michalek}]{Fratzscher1986}
+\bibinfo{author}{Fratzscher\xfnm[ W.]}, \bibinfo{author}{Brodjanskij\xfnm[
+  V.M.]}, \bibinfo{author}{Michalek\xfnm[ K.]}.
+\newblock \bibinfo{title}{{Exergie: Theorie und Anwendung}}.
+\newblock \bibinfo{address}{Leipzig, Germany}: \bibinfo{publisher}{Deutscher
+  Verlag f\"ur Grundstoffindustrie}; \bibinfo{year}{1986}.
+%Type = Article
+\bibitem[{Grassmann(1950)}]{Grassmann1950}
+\bibinfo{author}{Grassmann\xfnm[ V.P.]}.
+\newblock \bibinfo{title}{{Zur allgemeinen Definition des Wirkungsgrades}}.
+\newblock \bibinfo{journal}{Chemie Ingenieur Technik}
+  \bibinfo{year}{1950};\bibinfo{volume}{4}(\bibinfo{number}{1}):\bibinfo{pages}{77--80}.
+%Type = Article
+\bibitem[{Nesselmann(1953)}]{Nesselmann1953}
+\bibinfo{author}{Nesselmann\xfnm[ K.]}.
+\newblock \bibinfo{title}{{Der Wirkungsgrad thermodynamischer Prozesse und sein
+  Zusammenhang mit der Umgebungtemperatur}}.
+\newblock \bibinfo{journal}{Allgemeine W\"{a}rmetechnik}
+  \bibinfo{year}{1953};\bibinfo{volume}{4}(\bibinfo{number}{7}):\bibinfo{pages}{141--147}.
+%Type = Book
+\bibitem[{Baehr(1965)}]{Baehr1965}
+\bibinfo{author}{Baehr\xfnm[ H.D.]}.
+\newblock \bibinfo{title}{Energie und Exergie -- Die Anwendung des
+  Exergiebegriffs in der Energietechnik}.
+\newblock \bibinfo{address}{D\"{u}sseldorf, Germany}:
+  \bibinfo{publisher}{VDI-Verlag}; \bibinfo{year}{1965}.
+%Type = Article
+\bibitem[{Baehr(1968)}]{Baehr1968}
+\bibinfo{author}{Baehr\xfnm[ H.D.]}.
+\newblock \bibinfo{title}{{Zur Definition exergetischer Wirkungsgrade -- Eine
+  systematische Untersuchung}}.
+\newblock \bibinfo{journal}{Brennstoff-W\"{a}rme-Kraft}
+  \bibinfo{year}{1968};\bibinfo{volume}{20}(\bibinfo{number}{5}):\bibinfo{pages}{197--200}.
+%Type = Book
+\bibitem[{Brodyansky et~al.(1994)Brodyansky, Sorin and {Le
+  Goff}}]{Brodyansky1994}
+\bibinfo{author}{Brodyansky\xfnm[ V.M.]}, \bibinfo{author}{Sorin\xfnm[ M.V.]},
+  \bibinfo{author}{{Le Goff}\xfnm[ P.]}.
+\newblock \bibinfo{title}{The Efficiency of Industrial Processes: Exergy
+  Analysis and Optimization}.
+\newblock \bibinfo{address}{Amsterdam, The Netherlands}:
+  \bibinfo{publisher}{Elsevier}; \bibinfo{year}{1994}.
+%Type = Book
+\bibitem[{Szargut et~al.(1988)Szargut, Morris and Steward}]{Szargut1988}
+\bibinfo{author}{Szargut\xfnm[ J.]}, \bibinfo{author}{Morris\xfnm[ D.]},
+  \bibinfo{author}{Steward\xfnm[ F.]}.
+\newblock \bibinfo{title}{Exergy analysis of thermal, chemical, and
+  metallurgical processes}.
+\newblock \bibinfo{address}{New York, USA}: \bibinfo{publisher}{Hemisphere};
+  \bibinfo{year}{1988}.
+%Type = Article
+\bibitem[{Morris et~al.(1994)Morris, Steward and J.}]{Morris1994}
+\bibinfo{author}{Morris\xfnm[ D.]}, \bibinfo{author}{Steward\xfnm[ F.]},
+  \bibinfo{author}{J.\xfnm[ S.]}.
+\newblock \bibinfo{title}{Technological assessment of chemical metallurgical
+  processes}.
+\newblock \bibinfo{journal}{Canadian Metallurgical Quarterly}
+  \bibinfo{year}{1994};\bibinfo{volume}{33}(\bibinfo{number}{4}):\bibinfo{pages}{289--295}.
+%Type = Inproceedings
+\bibitem[{Szargut(1998)}]{Szargut1998}
+\bibinfo{author}{Szargut\xfnm[ J.]}.
+\newblock \bibinfo{title}{Exergy in the thermal systems analysis}.
+\newblock In: \bibinfo{editor}{Bejan\xfnm[ A.]}, \bibinfo{editor}{Mamut\xfnm[
+  E.]}, editors. \bibinfo{booktitle}{Proceedings of the NATO Advanced Study
+  Institute on Thermodynamic Optimization of Complex Energy Systems};
+  vol.~\bibinfo{volume}{69} of \emph{\bibinfo{series}{NATO Science Series}}.
+  \bibinfo{address}{Neptun, Romania}: \bibinfo{publisher}{Kluwer Academic
+  Publishers}; \bibinfo{year}{1998}, p. \bibinfo{pages}{137--150}.
+%Type = Book
+\bibitem[{Kotas(1995)}]{Kotas1995}
+\bibinfo{author}{Kotas\xfnm[ T.J.]}.
+\newblock \bibinfo{title}{{The Exergy Method of Thermal Plant Analysis}}.
+\newblock \bibinfo{address}{Malabar, USA}: \bibinfo{publisher}{Krieger
+  Publishing}; \bibinfo{year}{1995}.
+%Type = Article
+\bibitem[{Tsatsaronis(1993)}]{Tsatsaronis1993}
+\bibinfo{author}{Tsatsaronis\xfnm[ G.]}.
+\newblock \bibinfo{title}{Thermoeconomic analysis and optimization of energy
+  systems}.
+\newblock \bibinfo{journal}{Progress in Energy and Combustion Science}
+  \bibinfo{year}{1993};\bibinfo{volume}{19}:\bibinfo{pages}{227--257}.
+%Type = Inbook
+\bibitem[{Tsatsaronis and Cziesla(2002)}]{Thermoeconomics2001}
+\bibinfo{author}{Tsatsaronis\xfnm[ G.]}, \bibinfo{author}{Cziesla\xfnm[ F.]}.
+\newblock \bibinfo{title}{Encyclopedia of Physical Science and Technology};
+  vol.~\bibinfo{volume}{16}; chap. \bibinfo{chapter}{Thermoeconomics}.
+\newblock \bibinfo{edition}{3rd} ed.; \bibinfo{publisher}{Academic Press};
+  \bibinfo{year}{2002}, p. \bibinfo{pages}{659--680}.
+%Type = Article
+\bibitem[{Kostenko(1983)}]{Kostenko1983}
+\bibinfo{author}{Kostenko\xfnm[ G.]}.
+\newblock \bibinfo{title}{{Efficiency of Heat Processes (in Russian)}}.
+\newblock \bibinfo{journal}{Promishlenaya Teplotechnika}
+  \bibinfo{year}{1983};\bibinfo{volume}{4}:\bibinfo{pages}{70--73}.
+%Type = Inproceedings
+\bibitem[{Sorin et~al.(1994{\natexlab{a}})Sorin, Brodyansky and
+  Paris}]{Sorin1994}
+\bibinfo{author}{Sorin\xfnm[ M.V.]}, \bibinfo{author}{Brodyansky\xfnm[ V.M.]},
+  \bibinfo{author}{Paris\xfnm[ J.]}.
+\newblock \bibinfo{title}{Observations on exergy efficiency coefficients}.
+\newblock In: \bibinfo{editor}{Carnevale\xfnm[ E.]},
+  \bibinfo{editor}{Manfrida\xfnm[ G.]}, \bibinfo{editor}{Martelli\xfnm[ F.]},
+  editors. \bibinfo{booktitle}{Proceedings of the Florence World Energy
+  Research Symposium}; vol.~\bibinfo{volume}{94}. \bibinfo{address}{Padova,
+  Italy}: \bibinfo{publisher}{SG Editoriali};
+  \bibinfo{year}{1994}{\natexlab{a}}, p. \bibinfo{pages}{941--949}.
+%Type = Article
+\bibitem[{Kotas(1980{\natexlab{a}})}]{Kotas1980}
+\bibinfo{author}{Kotas\xfnm[ T.J.]}.
+\newblock \bibinfo{title}{{Exergy concepts for thermal plant: First of two
+  papers on exergy techniques in thermal plant analysis}}.
+\newblock \bibinfo{journal}{International Journal of Heat and Fluid Flow}
+  \bibinfo{year}{1980}{\natexlab{a}};\bibinfo{volume}{2}(\bibinfo{number}{3}):\bibinfo{pages}{105--114}.
+%Type = Article
+\bibitem[{Kotas(1980{\natexlab{b}})}]{Kotas1980a}
+\bibinfo{author}{Kotas\xfnm[ T.J.]}.
+\newblock \bibinfo{title}{{Exergy Criteria of Performance for Thermal Plant:
+  Second of two papers on exergy techniques in thermal plant analysis}}.
+\newblock \bibinfo{journal}{International Journal of Heat and Fluid Flow}
+  \bibinfo{year}{1980}{\natexlab{b}};\bibinfo{volume}{2}(\bibinfo{number}{4}):\bibinfo{pages}{147--163}.
+%Type = Book
+\bibitem[{Bejan et~al.(1996)Bejan, Tsatsaronis and
+  Moran}]{BejanAdrian;TsatsaronisGeorge;Moran1996}
+\bibinfo{author}{Bejan\xfnm[ A.]}, \bibinfo{author}{Tsatsaronis\xfnm[ G.]},
+  \bibinfo{author}{Moran\xfnm[ M.]}.
+\newblock \bibinfo{title}{{Thermal Design \& Optimization}}.
+\newblock \bibinfo{address}{New York, USA}: \bibinfo{publisher}{John Wiley \&
+  Sons}; \bibinfo{year}{1996}.
+%Type = Inproceedings
+\bibitem[{Moran(1998)}]{Moran1998}
+\bibinfo{author}{Moran\xfnm[ M.J.]}.
+\newblock \bibinfo{title}{Fundamentals of exergy analysis and exergy-based
+  thermal systems design}.
+\newblock In: \bibinfo{editor}{Bejan\xfnm[ A.]}, \bibinfo{editor}{Mamut\xfnm[
+  E.]}, editors. \bibinfo{booktitle}{Proceedings of the NATO Advanced Study
+  Institute on Thermodynamic Optimization of Complex Energy Systems};
+  vol.~\bibinfo{volume}{69} of \emph{\bibinfo{series}{NATO Science Series}}.
+  \bibinfo{address}{Neptun, Romania}: \bibinfo{publisher}{Kluwer Academic
+  Publishers}; \bibinfo{year}{1998}, p. \bibinfo{pages}{73--92}.
+%Type = Inproceedings
+\bibitem[{Lazzaretto and Tsatsaronis(1999)}]{Lazzaretto1999}
+\bibinfo{author}{Lazzaretto\xfnm[ A.]}, \bibinfo{author}{Tsatsaronis\xfnm[
+  G.]}.
+\newblock \bibinfo{title}{On the calculation of efficiencies and costs in
+  thermal systems}.
+\newblock In: \bibinfo{editor}{Aceves\xfnm[ S.M.]},
+  \bibinfo{editor}{Garimella\xfnm[ S.]}, \bibinfo{editor}{Peterson\xfnm[
+  R.B.]}, editors. \bibinfo{booktitle}{Proceedings of the ASME Advanced Energy
+  Systems Division}; vol.~\bibinfo{volume}{39}. \bibinfo{address}{New York,
+  USA}; \bibinfo{year}{1999}, p. \bibinfo{pages}{421--430}.
+%Type = Article
+\bibitem[{Lazzaretto and Tsatsaronis(2006)}]{Lazzaretto2006}
+\bibinfo{author}{Lazzaretto\xfnm[ A.]}, \bibinfo{author}{Tsatsaronis\xfnm[
+  G.]}.
+\newblock \bibinfo{title}{{SPECO: A systematic and general methodology for
+  calculating efficiencies and costs in thermal systems}}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{2006};\bibinfo{volume}{31}:\bibinfo{pages}{1257--1289}.
+%Type = Inproceedings
+\bibitem[{Sorin et~al.(1994{\natexlab{b}})Sorin, Paris and
+  Brodjanskij}]{Sorin1994a}
+\bibinfo{author}{Sorin\xfnm[ M.V.]}, \bibinfo{author}{Paris\xfnm[ J.]},
+  \bibinfo{author}{Brodjanskij\xfnm[ V.M.]}.
+\newblock \bibinfo{title}{Thermodynamic evaluation of a distillation}.
+\newblock In: \bibinfo{booktitle}{Thermodynamics and the Design, Analysis, and
+  Improvement of Energy Systems}; vol.~\bibinfo{volume}{33}.
+  \bibinfo{address}{New York, USA}: \bibinfo{publisher}{ASME};
+  \bibinfo{year}{1994}{\natexlab{b}}, p. \bibinfo{pages}{125--134}.
+%Type = Phdthesis
+\bibitem[{Cornelissen(1997)}]{Cornelissen1997}
+\bibinfo{author}{Cornelissen\xfnm[ R.]}.
+\newblock \bibinfo{title}{{Thermodynamics and sustainable development -- The
+  use of exergy analysis and the reduction of irreversibility}}.
+\newblock Ph.D. thesis; Universiteit Twente; \bibinfo{address}{Enschede, The
+  Netherlands}; \bibinfo{year}{1997}.
+%Type = Article
+\bibitem[{Lior and Zhang(2007)}]{Lior2007}
+\bibinfo{author}{Lior\xfnm[ N.]}, \bibinfo{author}{Zhang\xfnm[ N.]}.
+\newblock \bibinfo{title}{{Energy, exergy, and Second Law performance
+  criteria}}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{2007};\bibinfo{volume}{32}(\bibinfo{number}{4}):\bibinfo{pages}{281--296}.
+%Type = Article
+\bibitem[{{Oliveira Jr.} and {Van Hombeeck}(1997)}]{Oliveira1997}
+\bibinfo{author}{{Oliveira Jr.}\xfnm[ S.D.]}, \bibinfo{author}{{Van
+  Hombeeck}\xfnm[ M.]}.
+\newblock \bibinfo{title}{{Exergy Analysis of Petroleum Separation Processes in
+  Offshore Platforms}}.
+\newblock \bibinfo{journal}{Energy Conversion and Management}
+  \bibinfo{year}{1997};\bibinfo{volume}{38}(\bibinfo{number}{15-17}):\bibinfo{pages}{1577--1584}.
+%Type = Inproceedings
+\bibitem[{Voldsund et~al.(2010)Voldsund, Ertesv{\aa}g, R{\o}sjorde, He and
+  Kjelstrup}]{Voldsund2010}
+\bibinfo{author}{Voldsund\xfnm[ M.]}, \bibinfo{author}{Ertesv{\aa}g\xfnm[
+  I.S.]}, \bibinfo{author}{R{\o}sjorde\xfnm[ A.]}, \bibinfo{author}{He\xfnm[
+  W.]}, \bibinfo{author}{Kjelstrup\xfnm[ S.]}.
+\newblock \bibinfo{title}{{Exergy Analysis of the Oil and Gas Separation
+  Processes on a North Sea Oil Platform}}.
+\newblock In: \bibinfo{editor}{Favrat\xfnm[ D.]},
+  \bibinfo{editor}{Mar{\'e}chal\xfnm[ F.]}, editors.
+  \bibinfo{booktitle}{Proceedings of ECOS 2010 - The 23rd International
+  Conference on Efficiency, Cost, Optimization, Simulation and Environmental
+  Impact of Energy Systems}; vol. \bibinfo{volume}{IV Power plants \&
+  Industrial Processes}. \bibinfo{address}{Lausanne, Switzerland}:
+  \bibinfo{publisher}{CreateSpace Independent Publishing Platform};
+  \bibinfo{year}{2010}, p. \bibinfo{pages}{303--310}.
+%Type = Inproceedings
+\bibitem[{Voldsund et~al.(2012)Voldsund, He, R{\o}sjorde, Ertesv{\aa}g and
+  Kjelstrup}]{Voldsund2012}
+\bibinfo{author}{Voldsund\xfnm[ M.]}, \bibinfo{author}{He\xfnm[ W.]},
+  \bibinfo{author}{R{\o}sjorde\xfnm[ A.]}, \bibinfo{author}{Ertesv{\aa}g\xfnm[
+  I.S.]}, \bibinfo{author}{Kjelstrup\xfnm[ S.]}.
+\newblock \bibinfo{title}{{Evaluation of the Oil and Gas Processing at a Real
+  Production day on a North Sea Oil Platform Using Exergy Analysis}}.
+\newblock In: \bibinfo{editor}{Desideri\xfnm[ U.]},
+  \bibinfo{editor}{Manfrida\xfnm[ G.]}, \bibinfo{editor}{Sciubba\xfnm[ E.]},
+  editors. \bibinfo{booktitle}{Proceedings of ECOS 2012 - The 25th
+  International Conference on Efficiency, Cost, Optimization, Simulation and
+  Environmental Impact of Energy Systems}; vol.~\bibinfo{volume}{II}.
+  \bibinfo{address}{Perugia, Italy}: \bibinfo{publisher}{Firenze University
+  Press}; \bibinfo{year}{2012}, p. \bibinfo{pages}{153--166}.
+%Type = Article
+\bibitem[{Rian and Ertesv{\aa}g(2012)}]{Rian2012}
+\bibinfo{author}{Rian\xfnm[ A.B.]}, \bibinfo{author}{Ertesv{\aa}g\xfnm[ I.S.]}.
+\newblock \bibinfo{title}{{Exergy Evaluation of the Arctic Sn{\o}hvit Liquefied
+  Natural Gas Processing Plant in Northern Norway -- Significance of Ambient
+  Temperature}}.
+\newblock \bibinfo{journal}{Energy \& Fuels}
+  \bibinfo{year}{2012};\bibinfo{volume}{26}:\bibinfo{pages}{1259--1267}.
+%Type = Inproceedings
+\bibitem[{Bothamley(2004)}]{Bothamley2004}
+\bibinfo{author}{Bothamley\xfnm[ M.]}.
+\newblock \bibinfo{title}{{Offshore Processing Options for Oil Platforms}}.
+\newblock In: \bibinfo{booktitle}{Proceedings of the SPE Annual Technical
+  Conference and Exhibition}. \bibinfo{address}{Houston, USA}:
+  \bibinfo{publisher}{Society of Petroleum Engineers}; \bibinfo{year}{2004}, p.
+  \bibinfo{pages}{1--17 (Paper SPE 90325)}.
+%Type = Techreport
+\bibitem[{{Danish Energy Agency}(2011)}]{Energistyrelsen2011}
+\bibinfo{author}{{Danish Energy Agency}\xfnm[]}.
+\newblock \bibinfo{title}{{Danmarks olie og gas produktion}}.
+\newblock \bibinfo{type}{Tech. Rep.}; Energistyrelsen;
+  \bibinfo{address}{K{\o}benhavn, Denmark}; \bibinfo{year}{2011}.
+%Type = Techreport
+\bibitem[{{Norwegian Ministry of Petroleum and
+  Energy}(2012)}]{NorwegianMinistryofPetroleumandEnergy2012}
+\bibinfo{author}{{Norwegian Ministry of Petroleum and Energy}\xfnm[]}.
+\newblock \bibinfo{title}{{Facts 2012 -- The Norwegian Petroleum Sector}}.
+\newblock \bibinfo{type}{Tech. Rep.}; Norwegian Petroleum Directorate;
+  \bibinfo{address}{Oslo, Norway}; \bibinfo{year}{2012}.
+%Type = Book
+\bibitem[{Jones and Pujad\'{o}(2006)}]{JonesDavidS.J.Stan;Pujado2006}
+\bibinfo{editor}{Jones\xfnm[ D.S.J.S.]}, \bibinfo{editor}{Pujad\'{o}\xfnm[
+  P.R.]}, editors.
+\newblock \bibinfo{title}{{Handbook of Petroleum Processing}}.
+\newblock \bibinfo{address}{Dordrecht, The Netherlands}:
+  \bibinfo{publisher}{Springer}; \bibinfo{year}{2006}.
+%Type = Book
+\bibitem[{Manning and Thompson(1991{\natexlab{a}})}]{Manning1991}
+\bibinfo{author}{Manning\xfnm[ F.S.]}, \bibinfo{author}{Thompson\xfnm[ R.E.]}.
+\newblock \bibinfo{title}{{Oilfield processing of petroleum: Natural Gas}};
+  vol.~\bibinfo{volume}{1}.
+\newblock \bibinfo{address}{Tulsa, USA}: \bibinfo{publisher}{PennWell Books};
+  \bibinfo{year}{1991}{\natexlab{a}}.
+%Type = Book
+\bibitem[{Plisga and J.(2004)}]{Plisga2004}
+\bibinfo{editor}{Plisga\xfnm[ W.C.L.]}, \bibinfo{editor}{J.\xfnm[ G.]},
+  editors.
+\newblock \bibinfo{title}{{Standard Handbook of Petroleum \& Natural Gas
+  Engineering}}.
+\newblock \bibinfo{edition}{Second} ed.; \bibinfo{address}{Burlington, USA}:
+  \bibinfo{publisher}{Gulf Professional Publishing}; \bibinfo{year}{2004}.
+%Type = Book
+\bibitem[{Abdel-Aal et~al.(2003)Abdel-Aal, Aggour and
+  Fahim}]{Abdel-AalH.K.;AggourMohamed;Fahim2003}
+\bibinfo{author}{Abdel-Aal\xfnm[ H.K.]}, \bibinfo{author}{Aggour\xfnm[ M.]},
+  \bibinfo{author}{Fahim\xfnm[ M.A.]}.
+\newblock \bibinfo{title}{Petroleum and Gas Field Processing}.
+\newblock Chemical Industries; \bibinfo{address}{New York, USA}:
+  \bibinfo{publisher}{Marcel Dekker}; \bibinfo{year}{2003}.
+%Type = Techreport
+\bibitem[{Vik and Dinning(2009)}]{VikEilanArctander;Dinning2009}
+\bibinfo{author}{Vik\xfnm[ E.A.]}, \bibinfo{author}{Dinning\xfnm[ A.J.]}.
+\newblock \bibinfo{title}{{Produced Water Re-Injection - The Potential to
+  Become an Improved Oil Recovery Method}}.
+\newblock \bibinfo{type}{Tech. Rep.}; Aquatem A/S; \bibinfo{address}{Oslo,
+  Norway}; \bibinfo{year}{2009}.
+%Type = Book
+\bibitem[{Manning and Thompson(1991{\natexlab{b}})}]{Manning1991a}
+\bibinfo{author}{Manning\xfnm[ F.S.]}, \bibinfo{author}{Thompson\xfnm[ R.E.]}.
+\newblock \bibinfo{title}{{Oilfield processing of petroleum: Crude oil}};
+  vol.~\bibinfo{volume}{2}.
+\newblock \bibinfo{address}{Tulsa, USA}: \bibinfo{publisher}{PennWell Books};
+  \bibinfo{year}{1991}{\natexlab{b}}.
+%Type = Unpublished
+\bibitem[{Nguyen et~al.(2013)Nguyen, Pierobon, Elmegaard, Haglind, Breuhaus and
+  Voldsund}]{Nguyen2013}
+\bibinfo{author}{Nguyen\xfnm[ T.V.]}, \bibinfo{author}{Pierobon\xfnm[ L.]},
+  \bibinfo{author}{Elmegaard\xfnm[ B.]}, \bibinfo{author}{Haglind\xfnm[ F.]},
+  \bibinfo{author}{Breuhaus\xfnm[ P.]}, \bibinfo{author}{Voldsund\xfnm[ M.]}.
+\newblock \bibinfo{title}{{Exergetic assessment of energy systems on North Sea
+  oil and gas platforms}}; \bibinfo{year}{2013}.
+\newblock
+  \DOIprefix\doi{http://dx.doi.org.globalproxy.cvt.dk/10.1016/j.energy.2013.03.011};
+  \bibinfo{note}{{Energy (in press)}}.
+%Type = Article
+\bibitem[{Voldsund et~al.(2013{\natexlab{a}})Voldsund, Ertesv{\aa}g, He and
+  Kjelstrup}]{Voldsund2013}
+\bibinfo{author}{Voldsund\xfnm[ M.]}, \bibinfo{author}{Ertesv{\aa}g\xfnm[
+  I.S.]}, \bibinfo{author}{He\xfnm[ W.]}, \bibinfo{author}{Kjelstrup\xfnm[
+  S.]}.
+\newblock \bibinfo{title}{{Exergy Analysis of the Oil and Gas Processing a Real
+  Production Day on a North Sea Oil Platform}}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{2013}{\natexlab{a}};\bibinfo{volume}{55}:\bibinfo{pages}{716--727}.
+%Type = Inproceedings
+\bibitem[{Voldsund et~al.(2013{\natexlab{b}})Voldsund, Nguyen, Elmegaard,
+  Ertesv{\aa}g, R{\o}sjorde, J{\o}ssang et~al.}]{Voldsund2013b}
+\bibinfo{author}{Voldsund\xfnm[ M.]}, \bibinfo{author}{Nguyen\xfnm[ T.V.]},
+  \bibinfo{author}{Elmegaard\xfnm[ B.]}, \bibinfo{author}{Ertesv{\aa}g\xfnm[
+  I.]}, \bibinfo{author}{R{\o}sjorde\xfnm[ A.]},
+  \bibinfo{author}{J{\o}ssang\xfnm[ K.]}, et~al.
+\newblock \bibinfo{title}{{Comparative study of the sources of exergy
+  destruction on four North Sea oil and gas platforms}}.
+\newblock In: \bibinfo{booktitle}{Proceedings of ECOS 2013 - The 26th
+  International Conference on Efficiency, Cost, Optimization, Simulation and
+  Environmental Impact of Energy Systems}. \bibinfo{year}{2013}{\natexlab{b}},.
+%Type = Book
+\bibitem[{{Aspen Technology}(2004)}]{Guide2004}
+\bibinfo{author}{{Aspen Technology}\xfnm[]}.
+\newblock \bibinfo{title}{{Aspen Hysys 2004.2 \textregistered -- User Guide}}.
+\newblock \bibinfo{address}{Cambridge, USA}: \bibinfo{publisher}{Aspen
+  Technology}; \bibinfo{year}{2004}.
+%Type = Book
+\bibitem[{{Aspen Technology}(1999)}]{Technology1999}
+\bibinfo{author}{{Aspen Technology}\xfnm[]}.
+\newblock \bibinfo{title}{{Aspen Plus -- Modelling Petroleum Processes}}.
+\newblock \bibinfo{address}{Burlington, USA}: \bibinfo{publisher}{Aspen
+  Technology}; \bibinfo{year}{1999}.
+%Type = Article
+\bibitem[{Peng and Robinson(1976)}]{Peng1976}
+\bibinfo{author}{Peng\xfnm[ D.Y.]}, \bibinfo{author}{Robinson\xfnm[ D.B.]}.
+\newblock \bibinfo{title}{{A New Two-Constant Equation of State}}.
+\newblock \bibinfo{journal}{Industrial \& Engineering Chemistry Fundamentals}
+  \bibinfo{year}{1976};\bibinfo{volume}{15}(\bibinfo{number}{1}):\bibinfo{pages}{59--64}.
+%Type = Article
+\bibitem[{Renon and Prausnitz(1968)}]{Renon1968}
+\bibinfo{author}{Renon\xfnm[ H.]}, \bibinfo{author}{Prausnitz\xfnm[ J.M.]}.
+\newblock \bibinfo{title}{{Local compositions in thermodynamic excess functions
+  for liquid mixtures}}.
+\newblock \bibinfo{journal}{AIChE Journal}
+  \bibinfo{year}{1968};\bibinfo{volume}{14}(\bibinfo{number}{1}):\bibinfo{pages}{135--144}.
+%Type = Article
+\bibitem[{Schwartzentruber and Renon(1989)}]{Schwartzentruber1989a}
+\bibinfo{author}{Schwartzentruber\xfnm[ J.]}, \bibinfo{author}{Renon\xfnm[
+  H.]}.
+\newblock \bibinfo{title}{{Extension of UNIFAC to High Pressures and
+  Temperatures by the Use of a Cubic Equation of State}}.
+\newblock \bibinfo{journal}{Industrial \& Engineering Chemistry Research}
+  \bibinfo{year}{1989};\bibinfo{volume}{28}(\bibinfo{number}{7}):\bibinfo{pages}{1049--1055}.
+%Type = Article
+\bibitem[{Schwartzentruber et~al.(1989)Schwartzentruber, Renon and
+  Watanasiri}]{Schwartzentruber1989b}
+\bibinfo{author}{Schwartzentruber\xfnm[ J.]}, \bibinfo{author}{Renon\xfnm[
+  H.]}, \bibinfo{author}{Watanasiri\xfnm[ S.]}.
+\newblock \bibinfo{title}{Development of a new cubic equation of state for
+  phase equilibrium calculations}.
+\newblock \bibinfo{journal}{Fluid Phase Equilibria}
+  \bibinfo{year}{1989};\bibinfo{volume}{52}:\bibinfo{pages}{127--134}.
+%Type = Inproceedings
+\bibitem[{Elmegaard and Houbak(2005)}]{Elmegaard2005}
+\bibinfo{author}{Elmegaard\xfnm[ B.]}, \bibinfo{author}{Houbak\xfnm[ N.]}.
+\newblock \bibinfo{title}{{DNA -- A General Energy System Simulation Tool}}.
+\newblock In: \bibinfo{editor}{Amundsen\xfnm[ J.]}, editor.
+  \bibinfo{booktitle}{Proceedings of SIMS 2005 - 46th Conference on Simulation
+  and Modeling}. \bibinfo{address}{Trondheim, Norway}:
+  \bibinfo{publisher}{Tapir Academic Press}; \bibinfo{year}{2005}, p.
+  \bibinfo{pages}{43--52}.
+%Type = Article
+\bibitem[{Tsatsaronis(2007)}]{Tsatsaronis2007}
+\bibinfo{author}{Tsatsaronis\xfnm[ G.]}.
+\newblock \bibinfo{title}{Definitions and nomenclature in exergy analysis and
+  exergoeconomics}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{2007};\bibinfo{volume}{32}(\bibinfo{number}{4}):\bibinfo{pages}{249--253}.
+%Type = Article
+\bibitem[{Tsatsaronis and Winhold(1985)}]{Tsatsaronis1985}
+\bibinfo{author}{Tsatsaronis\xfnm[ G.]}, \bibinfo{author}{Winhold\xfnm[ M.]}.
+\newblock \bibinfo{title}{{Exergoeconomic analysis and evaluation of
+  energy-conversion plants -- I. A new general methodology}}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{1985};\bibinfo{volume}{10}(\bibinfo{number}{1}):\bibinfo{pages}{69--80}.
+%Type = Article
+\bibitem[{Szargut(1989)}]{Szargut1989}
+\bibinfo{author}{Szargut\xfnm[ J.]}.
+\newblock \bibinfo{title}{{Chemical exergies of the elements}}.
+\newblock \bibinfo{journal}{Applied Energy}
+  \bibinfo{year}{1989};\bibinfo{volume}{32}(\bibinfo{number}{4}):\bibinfo{pages}{269--286}.
+%Type = Article
+\bibitem[{Morris and Szargut(1986)}]{Morris1986}
+\bibinfo{author}{Morris\xfnm[ D.R.]}, \bibinfo{author}{Szargut\xfnm[ J.]}.
+\newblock \bibinfo{title}{{Standard chemical exergy of some elements and
+  compounds on the planet earth}}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{1986};\bibinfo{volume}{11}(\bibinfo{number}{8}):\bibinfo{pages}{733--755}.
+%Type = Book
+\bibitem[{Sato(2004)}]{Sato2004}
+\bibinfo{author}{Sato\xfnm[ N.]}.
+\newblock \bibinfo{title}{{Chemical Energy and Exergy: An Introduction to
+  Chemical Thermodynamics for Engineers}}.
+\newblock \bibinfo{edition}{1st} ed.; \bibinfo{address}{Amsterdam, The
+  Netherlands}: \bibinfo{publisher}{Elsevier}; \bibinfo{year}{2004}.
+%Type = Article
+\bibitem[{Rivero et~al.(1999)Rivero, Rendon and Monroy}]{Rivero1999}
+\bibinfo{author}{Rivero\xfnm[ R.]}, \bibinfo{author}{Rendon\xfnm[ C.]},
+  \bibinfo{author}{Monroy\xfnm[ L.]}.
+\newblock \bibinfo{title}{{The Exergy of Crude Oil Mixtures and Petroleum
+  Fractions: Calculation and Application}}.
+\newblock \bibinfo{journal}{International Journal of Applied Thermodynamics}
+  \bibinfo{year}{1999};\bibinfo{volume}{2}(\bibinfo{number}{3}):\bibinfo{pages}{115--123}.
+%Type = Inbook
+\bibitem[{Wall(2004)}]{Wall2004}
+\bibinfo{author}{Wall\xfnm[ G.]}.
+\newblock \bibinfo{title}{Encyclopedia of Energy}; vol.~\bibinfo{volume}{2};
+  chap. \bibinfo{chapter}{Exergy}.
+\newblock \bibinfo{publisher}{Academic Press}; \bibinfo{year}{2004}, p.
+  \bibinfo{pages}{593--606}.
+%Type = Book
+\bibitem[{Moran(1989)}]{Moran1989}
+\bibinfo{author}{Moran\xfnm[ M.J.]}.
+\newblock \bibinfo{title}{Availability analysis: a guide to efficient energy
+  use}.
+\newblock \bibinfo{edition}{2nd} ed.; \bibinfo{address}{New York, USA}:
+  \bibinfo{publisher}{ASME Press}; \bibinfo{year}{1989}.
+%Type = Article
+\bibitem[{Sorin et~al.(1998)Sorin, Lambert and Paris}]{Sorin1998}
+\bibinfo{author}{Sorin\xfnm[ M.V.]}, \bibinfo{author}{Lambert\xfnm[ J.]},
+  \bibinfo{author}{Paris\xfnm[ J.]}.
+\newblock \bibinfo{title}{Exergy flows analysis in chemical reactors}.
+\newblock \bibinfo{journal}{IChemE}
+  \bibinfo{year}{1998};\bibinfo{volume}{76}(\bibinfo{number}{A}):\bibinfo{pages}{389--395}.
+%Type = Article
+\bibitem[{Szargut(1980)}]{Szargut1980}
+\bibinfo{author}{Szargut\xfnm[ J.]}.
+\newblock \bibinfo{title}{{International progress in second law analysis}}.
+\newblock \bibinfo{journal}{Energy}
+  \bibinfo{year}{1980};\bibinfo{volume}{5}(\bibinfo{number}{8-9}):\bibinfo{pages}{709--718}.
+%Type = Book
+\bibitem[{Moran and Shapiro(2007)}]{Moran2007}
+\bibinfo{author}{Moran\xfnm[ M.J.]}, \bibinfo{author}{Shapiro\xfnm[ H.N.]}.
+\newblock \bibinfo{title}{Fundamentals of Engineering Thermodynamics}.
+\newblock \bibinfo{edition}{6th} ed.; \bibinfo{address}{New York, USA}:
+  \bibinfo{publisher}{John Wiley \& Sons}; \bibinfo{year}{2007}.
+%Type = Inproceedings
+\bibitem[{Valero and Alconchel(1987)}]{Valero1987}
+\bibinfo{author}{Valero\xfnm[ A.]}, \bibinfo{author}{Alconchel\xfnm[ J.A.]}.
+\newblock \bibinfo{title}{{Toward a Universal Formula of Efficiency}}.
+\newblock In: \bibinfo{editor}{Moran\xfnm[ M.J.]},
+  \bibinfo{editor}{Sciubba\xfnm[ E.]}, editors. \bibinfo{booktitle}{Second Law
+  Analysis of Thermal Systems, Proceedings of ASME Annual Winter Meeting}.
+  \bibinfo{address}{New York, USA}; \bibinfo{year}{1987}, p.
+  \bibinfo{pages}{193--197}.
+
+\end{thebibliography}

@@ -1,0 +1,226 @@
+ %% This is file `elsarticle-template-3-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-3-num.tex 165 2009-10-08 07:58:10Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-3-num.tex $
+%%
+
+\documentclass[times,3p]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% PACKAGES
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The numcompress package shorten the last page in references.
+%% `nodots' option removes dots from firstnames in references.
+%% `nocompress' option prevent shortening of last page as
+%% by default it will shorten.
+
+\usepackage[nodots]{numcompress}
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+
+\usepackage{lineno}
+
+%\usepackage{fleqn}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{nomencl}
+\usepackage{framed} % Framing content
+\usepackage{multicol} % Multiple columns environment
+\usepackage{float}
+\usepackage{rotating}
+
+\usepackage[pdftex,bookmarks=true]{hyperref}
+\hypersetup{ 
+    colorlinks,% 
+    citecolor=black,% 
+    filecolor=black,% 
+    linkcolor=black,% 
+    urlcolor=black,
+		pdfstartview=FitH
+} 
+
+\biboptions{square,sort&compress}
+
+%% Contraction of references
+\makeatletter
+\def\NAT@spacechar{}
+\makeatother
+
+\renewcommand*\nompreamble{\begin{multicols}{2}}
+\renewcommand*\nompostamble{\end{multicols}}
+
+\RequirePackage{ifthen}
+
+\renewcommand{\nomgroup}[1]{%
+\ifthenelse{\equal{#1}{0}}{\item[\emph{Symbols}]}{
+\ifthenelse{\equal{#1}{S}}{\item[\emph{Subscripts}]}{}}
+\ifthenelse{\equal{#1}{P}}{\item[\emph{Superscripts}]}{
+\ifthenelse{\equal{#1}{A}}{\item[\emph{Abbreviations}]}{}}
+\ifthenelse{\equal{#1}{G}}{\item[\emph{Greek letters}]}{
+\ifthenelse{\equal{#1}{O}}{\item[\emph{Others}]}}
+}
+
+\makeindex
+\makenomenclature
+
+\journal{Energy}
+
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Exergetic efficiency definitions for oil and gas platforms}
+
+\author[dtu]{Tuong-Van Nguyen\corref{cor}} \cortext[cor]{Principal corresponding author. Tel.: +45 4525 4129} \ead{tungu@mek.dtu.dk}
+\author[ntnu1]{Mari Voldsund} \ead{mari.voldsund@ntnu.no}
+\author[dtu]{Brian Elmegaard} \ead{be@mek.dtu.dk}
+\author[ntnu2]{Ivar St\aa le Ertesv\aa g}  \ead{ivar.s.ertesvag@ntnu.no}
+
+\address[dtu]{Section of Thermal Energy, Department of Mechanical Engineering, Technical University of Denmark,\\ Building 403, Nils Koppels All\'{e}, 2800 Kongens Lyngby, Denmark}
+\address[ntnu1]{Department of Chemistry, Norwegian University of Science and Technology, \\ H\o gskoleringen 5, 7491 Trondheim, Norway}
+\address[ntnu2]{Department of Energy and Process Engineering, Norwegian University of Science and Technology, \\ Kolbj\o rn Hejes vei 1b., 7491 Trondheim, Norway}
+
+\input{abstract}
+
+\begin{keyword}
+Exergy \sep Efficiency \sep Oil and gas platforms
+\end{keyword}
+
+\end{frontmatter}
+
+%
+%% Start line numbering here if you want
+%%
+%\linenumbers
+
+%% Main Text
+
+%%%%%%%%% NOMENCLATURE %%%%%%%%%
+
+\begin{table*}[!t]
+  \begin{framed}
+  \scriptsize
+    \printnomenclature
+  \end{framed}
+\end{table*}
+
+%%%%%%%%% CONTENTS %%%%%%%%%
+
+
+\tableofcontents
+
+
+
+
+%%%%%%%%% MAIN PART %%%%%%%%%
+
+\input{introduction}
+
+\input{system_description}
+
+\input{theory}
+
+\input{case_study}
+
+\input{discussion}
+
+
+
+\input{conclusion}
+			
+%%%%%%%%% SECTION: ACKNOWLEDGEMENTS %%%%%%%%%
+
+\section*{Acknowledgements}
+
+%%%%%%%%% SECTION: REFERENCES %%%%%%%%%
+
+\section*{References}
+\label{References}
+
+%% References with bibTeX database:
+
+\bibliographystyle{model3-num-names}
+\bibliography{ENERGY_paper_database}			
+
+%%%%%%%%% SECTION: APPENDICES %%%%%%%%%
+
+\input{appendix}
+
+\input{removed_parts}
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-3-num.tex'.

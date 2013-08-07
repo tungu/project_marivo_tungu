@@ -1,0 +1,28 @@
+\section{Discussion}
+\label{sec:discussion}
+
+This expression is unambiguous but may be misleading, as it can be relatively insensitive to changes taking place within the system. For instance, when only a small fraction of the inflowing exergy is transformed, the exergy destruction taking place within the system is small in comparison to the total input exergy flows. Calculations of the input-output exergetic efficiency will return a high value, giving the impression of a high thermodynamic performance.
+
+However, mathematically, this efficiency expression may have a negative value if the term $\sum_k\dot{E}_k-\dot{E}_{feed}$ is below 0, which is the case only when the exergy of the separated products is lower than the exergy of the feed. 
+
+\subsection{The interpretation of product exergy}
+(Ideas for discussion. Discuss with TV and find out what to include and how.)
+
+\subsubsection{Produced water}
+The produced water is not a useful product. However it is required that it has to be purified. Should it be considered product or not? Discuss. How big are the values for exergy losses? Does it make a big difference?
+
+
+\subsubsection{Pressure based versus temperature based physical exergy}
+
+The exergy balances and interpretations of fuel and product presented in Eqs.(\ref{eq:rian_losses}--\ref{eq:speco_losses}) can be improved by expressing the physical and chemical exergy terms as functions of their thermal, mechanical, reactive and nonreactive components. Such decompositions may improve the accuracy of the exergy efficiency definitions although they require larger computational calculations \cite{Lazzaretto1999,Lazzaretto2006}. However, it is also argued that a separation of the several exergy components may be necessary to obtain consistent results.    
+
+\begin{itemize}
+	\item based on the studies of Kotas \cite{Kotas1995} and Cornelissen \cite{Cornelissen1997} the product exergy (\emph{Term II}) can be considered to be the pressure-based exergy only, and the temperature-based exergy is assumed as an exergy loss (\emph{Term III}) of the oil and gas system. 
+\end{itemize} 
+
+%\begin{align}
+%		&\underbrace{\underbrace{\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}}_{I'}+\underbrace{\sum_{kw}\sum_i \dot{n}_{i,kw}(\bar{e}^{ch}_{i,feed})}_{I''}}_{I} \nonumber\\
+%		&=\underbrace{\sum_{ku}\left(\dot{E}^{m}_{ku}+\Delta{\dot{E}}^{N}_{ku}\right)}_{II}+\underbrace{\sum_{ku}\left(\dot{E}^{t}_{ku}\right)+\sum_{kw} \dot{E}_{kw}+\dot{E}_{exh}+\dot{E}^Q_{cool}}_{III}+\underbrace{\dot{E}_{d,OP}}_{IV}
+%\label{eq:rian_pressure}
+%\end{align}
+

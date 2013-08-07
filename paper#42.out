@@ -1,0 +1,42 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{System description}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{General overview}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Case studies}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Modelling and simulation}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Theoretical background}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Exergy analysis}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Flow exergy}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Transit exergy}{subsection.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Exergetic efficiency}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Total exergetic efficiency}{subsection.3.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Task exergetic efficiency}{subsection.3.3}% 12
+\BOOKMARK [1][-]{section.4}{Exergetic efficiency for oil and gas platforms}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Exergetic efficiency of the utility plant}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Exergetic efficiencies of the processing plant}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Product: difference in material streams}{subsection.4.2}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Fuel: also physical exergy in, Product: separation work and physical exergy out}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Fuel: also exergy decrease, Product: also exergy increase}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Component-by-component exergetic efficiency}{subsection.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Exergetic efficiencies for the overall plant}{section.4}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Product: difference in material streams}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Fuel: also physical exergy in, Product: separation work and physical exergy out}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Fuel: also exergy decrease, Product: also exergy increase}{subsection.4.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Auxiliary formulations}{subsection.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.4}{Summary of the definitions}{section.4}% 25
+\BOOKMARK [1][-]{section.5}{Case study}{}% 26
+\BOOKMARK [2][-]{subsection.5.1}{Exergetic efficiency using different formulations}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.2}{Discussion of the results}{section.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Product: difference in material streams}{subsection.5.2}% 29
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Fuel: also physical exergy in, Product: separation work and physical exergy out}{subsection.5.2}% 30
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Fuel: also exergy decrease, Product: also exergy increase}{subsection.5.2}% 31
+\BOOKMARK [2][-]{subsection.5.3}{Which formulation makes most sense?}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{The interpretation of product exergy}{section.6}% 34
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Produced water}{subsection.6.1}% 35
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Pressure based versus temperature based physical exergy}{subsection.6.1}% 36
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 37
+\BOOKMARK [1][-]{appendix.A}{Process details}{}% 38
+\BOOKMARK [1][-]{appendix.B}{Removed parts}{}% 39
+\BOOKMARK [2][-]{subsection.B.1}{SPECO}{appendix.B}% 40
+\BOOKMARK [2][-]{subsection.B.2}{All streams useful}{appendix.B}% 41
+\BOOKMARK [3][-]{subsubsection.B.2.1}{Case 1 \205 all streams of matter exiting the processing plant are useful}{subsection.B.2}% 42

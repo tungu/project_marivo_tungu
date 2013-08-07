@@ -1,0 +1,56 @@
+\section{Removed parts}
+
+\textbf{(Removed parts of the text are stored here, in case we would like to put it back, or use parts of it.)}
+
+\subsection{SPECO}
+Finally, Tsatsaronis \cite{BejanAdrian;TsatsaronisGeorge;Moran1996,Tsatsaronis2007} introduced the concept of \emph{`fuel exergy'} and \emph{`product exergy'} and proposed the following nomenclature. The \emph{product exergy} ($\dot{E}_p$ on a time rate basis) represents the desired result of the system, expressed in terms of exergy. The product exergy term includes, according to Lazzaretto and Tsatsaronis \cite{Lazzaretto1999,Lazzaretto2006}:
+	\begin{itemize}
+		\item all the exergy values to be considered at the outlet;
+		\item all the exergy increases between inlet and outlet (i.e. exergy additions to material streams) that are in accord with the purpose of operating the system under study.
+	\end{itemize}
+The \emph{fuel exergy} ($\dot{E}_f$ on a time rate basis) stands for the necessary resources used to drive the process under consideration to generate the product exergy. Fuel does \emph{not} always correspond to a given fuel such as natural gas, oil or diesel but represents the exergetic resources utilised within the system. The fuel exergy term includes, according to Lazzaretto and Tsatsaronis \cite{Lazzaretto1999,Lazzaretto2006}:
+		\begin{itemize}
+			\item all the exergy values to be considered at the inlet (e.g. exergy of the fuel gas entering a gas turbine);
+			\item all the exergy decreases between inlet and outlet (i.e. exergy removals from material streams).
+		\end{itemize}
+		
+		
+		
+\subsection{All streams useful}		
+\subsubsection{Case 1 -- all streams of matter exiting the processing plant are useful}
+ 
+The approaches presented in Refs. \cite{Kotas1995,Oliveira1997,Voldsund2010,Voldsund2012,Lazzaretto1999,Lazzaretto2006,Cornelissen1997,Rian2012} can be extended from the oil and gas processing plant to the overall plant. The exergy balance can therefore be reformulated as:
+
+\begin{itemize}
+	\item following the works of Kotas \cite{Kotas1995} and of Oliveira and Van Hombeeck \cite{Oliveira1997}, the consumed exergy consists of the exergies of the components present in the feed that are processed as fuel gas as well as the air processed in the gas turbines;
+\end{itemize}
+
+\begin{align}
+	\underbrace{\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}_{I}&=\sum_{k'} \sum_i \dot{n}_{i,k'}\left(\bar{e}_{i,k'}-\bar{e}_{i,feed}\right)+\dot{E}_{exh}+\dot{E}^Q_{cool}+\dot{E}_{d,OP} \nonumber\\
+	&=\underbrace{\sum_{k'}\Delta\dot{E}_{k'}}_{II}+\underbrace{\dot{E}_{exh}+\dot{E}^Q_{cool}}_{III}+\underbrace{\dot{E}_{d,OP}}_{IV}
+	\label{eq:oliveira_nolosses}
+\end{align}	
+ 
+ The exact formulation proposed by Oliveira and Van Hombeeck \cite{Oliveira1997} is slightly different, as they defined the consumed exergy as the chemical exergy of the fuel gas, and not as the flow exergy associated with the fraction of the feed that is processed to the power generation system. This results in minor numerical differences, as the physical exergy of the fuel gas and the difference of the exergy penalties due to the mixing effect are negligible in comparison to the chemical exergy of the pure components.  
+ 
+\begin{itemize}
+	\item considering the same work of Kotas \cite{Kotas1995} as well as the studies of Cornelissen \cite{Cornelissen1997} and Rian and Ertesv\aa g \cite{Rian2012}, the consumed exergy consists of the fuel gas exergy to the utility plant, the air processed in the gas turbines and the physical exergy of the feed;
+\end{itemize} 
+ 
+ \begin{equation}
+	\underbrace{\dot{E}^{ph}_{feed}+\sum_i \dot{n}_{i,fg}\bar{e}^{ch}_{i,feed}+\dot{E}_{air}}_{I}=\underbrace{\sum_{k'}\left(\dot{E}^{ph}_{k'}+\Delta{\dot{E}}^{ch}_{k'}\right)}_{II}+\underbrace{\dot{E}_{exh}+\dot{E}^Q_{cool}}_{III}+\underbrace{\dot{E}_{d,OP}}_{IV}
+\end{equation}	
+
+\begin{itemize}
+	\item finally, applying the fuel-product definitions described in Lazzaretto and Tsatsaronis \cite{Lazzaretto1999,Lazzaretto2006}, the fuel exergy consists of the chemical exergy of the fraction of the feed that goes to the utility plant, the air processed in the gas turbines and the decreases of physical exergy between the inlet and outlet of the system:
+\end{itemize}
+
+ \begin{align}
+	\underbrace{\sum_{k^{-}} \dot{m}_{k^{-}}\cdot(e_{feed}^{ph}-e_{k^{-}}^{ph})+\sum_i \dot{n}_{i,fg}\bar{e}_{i,feed}+\dot{E}_{air}}_{I}=&\underbrace{\sum_{k^{+}}\dot{m}_{k^{+}}\cdot(e_{k^{+}}^{ph}-e_{feed}^{ph})+\sum_{k'}\Delta{\dot{E}}^{ch}_{k'}}_{II}\nonumber\\
+	&+\underbrace{\dot{E}_{exh}+\dot{E}^Q_{cool}}_{III}+\underbrace{\dot{E}_{d,OP}}_{IV}
+	\label{eq:speco_nolosses}
+\end{align}	
+
+Eq. (\ref{eq:speco_nolosses}) reduces to Eq.(\ref{eq:oliveira_nolosses}) when all the streams exiting the oil and gas platform have a higher specific physical exergy than at the inlet.
+
+\nomenclature[S]{fg}{fuel gas}		

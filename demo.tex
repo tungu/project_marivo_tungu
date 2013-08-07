@@ -1,0 +1,248 @@
+%% This is file `elsarticle-template-3-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-3-num.tex 165 2009-10-08 07:58:10Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-3-num.tex $
+%%
+
+\documentclass[preprint,times,review,3p]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% PACKAGES
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The numcompress package shorten the last page in references.
+%% `nodots' option removes dots from firstnames in references.
+%% `nocompress' option prevent shortening of last page as
+%% by default it will shorten.
+
+\usepackage[nodots]{numcompress}
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+
+\usepackage{lineno}
+
+
+%\usepackage{fleqn}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{nomencl}
+\usepackage{framed} % Framing content
+\usepackage{multicol} % Multiple columns environment
+\usepackage{float}
+\usepackage{rotating}
+
+\biboptions{square,sort&compress}
+
+%% Contraction of references
+\makeatletter
+\def\NAT@spacechar{}
+\makeatother
+
+%% Decimals alignment
+\usepackage{dcolumn}
+\newcolumntype{d}{D{.}{.}{2.5}}
+\newcolumntype{s}{D{.}{.}{1.2}}
+\setlength{\nomitemsep}{-\parskip} % Baseline skip between items
+
+\renewcommand*\nompreamble{\begin{multicols}{2}}
+\renewcommand*\nompostamble{\end{multicols}}
+
+\RequirePackage{ifthen}
+
+\renewcommand{\nomgroup}[1]{%
+\ifthenelse{\equal{#1}{0}}{\item[\emph{Symbols}]}{
+\ifthenelse{\equal{#1}{S}}{\item[\emph{Subscripts}]}{}}
+\ifthenelse{\equal{#1}{P}}{\item[\emph{Superscripts}]}{
+\ifthenelse{\equal{#1}{A}}{\item[\emph{Abbreviations}]}{}}
+\ifthenelse{\equal{#1}{G}}{\item[\emph{Greek letters}]}{
+\ifthenelse{\equal{#1}{O}}{\item[\emph{Others}]}}
+}
+
+\makeindex
+\makenomenclature
+
+\journal{Energy}
+
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+
+\begin{document}
+
+\title{Performance indicators for evaluation of North Sea oil and gas platforms}
+			
+Suggestion/demonstration - the overall system is considered (processing plant and utilities) with fuel gas and ventilated gas. The inputs of this control volume are therefore the well-fluid (crude oil), the cooling water used on-site and the air used in the gas turbines. The outputs are the exhaust gases from the gas turbines, the oil and gas sent onshore, the produced water, the ventilated gas from the process units and the rejected cooling water. $\dot{I}$ denotes the internal thermodynamic irreversibilities and $\dot{E}^Q_{CW}$ the increase of physical exergy of the cooling water. $i$ denotes the chemical specie and $k$ the stream of interest.
+
+		\begin{equation}
+			\dot{E}_{feed}+\dot{E}_{air} = \dot{E}_{oil}+\dot{E}_{gas,export}+\dot{E}_{gas,ventilated}\nonumber+\dot{E}_{produced\ water}+\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I}
+		\end{equation}
+		
+Decomposing each exergy term (except for the air) into its chemical and physical exergies...
+
+		\begin{eqnarray}
+		    \dot{E}_{feed}^{ph}+\dot{E}_{feed}^{ch}+\dot{E}_{air} &=& \dot{E}_{oil}^{ph}+\dot{E}_{oil}^{ch}+\dot{E}_{gas,export}^{ph}+\dot{E}_{gas,export}^{ch}\nonumber\\
+																							&&+\dot{E}_{gas,ventilated}^{ph}+\dot{E}_{gas,ventilated}^{ch}\nonumber\\&&+\dot{E}_{produced\ water}^{ph}+\dot{E}_{produced\ water}^{ch}\nonumber\\
+																							&&+\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I} \\
+			\dot{E}_{feed}^{ph}+\dot{E}_{air} &=& \dot{E}_{oil}^{ph}+\dot{E}_{oil}^{ch}+\dot{E}_{gas,export}^{ph}+\dot{E}_{gas,export}^{ch}\nonumber\\
+																							&&+\dot{E}_{gas,ventilated}^{ph}+\dot{E}_{gas,ventilated}^{ch}\nonumber\\&&+\dot{E}_{produced\ water}^{ph}+\dot{E}_{produced\ water}^{ch}\nonumber\\
+																							&&+\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I}\nonumber\\
+																							&&-\dot{E}_{feed}^{ch}
+		\end{eqnarray}
+		
+Assuming ideal mixtures, with an activity coefficient equal to 1, the chemical exergy can be expressed as:
+
+	\begin{equation}
+	\dot{E}^{ch}=\sum_i \dot{n}_{i}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i}\right)
+	\end{equation}
+
+Adding the term $\left(\sum_i \dot{n}_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)$, which is the fraction of the feed sent as fuel to the gas turbines, the exergy balance becomes:
+
+		\begin{eqnarray}
+			\dot{E}_{feed}^{ph}+\dot{E}_{air}+\left(\sum_i \dot{n}_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right) &=& 		\dot{E}_{oil}^{ph}+\dot{E}_{oil}^{ch}+\dot{E}_{gas,export}^{ph}+\dot{E}_{gas,export}^{ch}\nonumber\\
+																							&&+\dot{E}_{gas,ventilated}^{ph}+\dot{E}_{gas,ventilated}^{ch}\nonumber\\&&+\dot{E}_{produced\ water}^{ph}+\dot{E}_{produced\ water}^{ch}\nonumber\\
+																							&&+\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I} \nonumber\\
+																							&&+\left(\sum_i \dot{n}_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)\nonumber\\
+																							&&-\dot{E}_{feed}^{ch}
+			\end{eqnarray}
+			
+			The difference of chemical exergies between the processing plant outlet and inlet is defined as:
+			 \begin{eqnarray}
+			\Delta \dot{E}^{ch} &=& -\dot{E}_{feed}^{ch}+\dot{E}_{oil}^{ch}+\dot{E}_{gas,export}^{ch}+\dot{E}_{gas,ventilated}^{ch}+\dot{E}_{produced\ water}^{ch}+\dot{E}_{fuel}^{ch} \\
+										 &=& \sum_i \left(\bar{\epsilon}^0_i\left(-\dot{n}_{i,feed}+\dot{n}_{i,oil}+\dot{n}_{i,gas,export}+\dot{n}_{i,gas,ventilated}+ \dot{n}_{i,produced\ water}+\dot{n}_{i,fuel}\right)\right)\nonumber\\
+										 && +\bar{R}T_0\ \sum_i\left(-\dot{n}_{i,feed}\ ln\ x_{i,feed}+\dot{n}_{i,gas,export}\ ln\ x_{i,gas,export}+\dot{n}_{i,gas,ventilated}\ ln\ x_{i,gas,ventilated}\right)\nonumber\\
+										 && +\bar{R}T_0\ \sum_i\left(\dot{n}_{i,produced\ water}\ ln\ x_{i,produced\ water}+\dot{n}_{i,fuel}\ ln\ x_{i,fuel}\right)
+			\end{eqnarray}
+			
+			As no chemical species are produced or consumed within \emph{the processing plant}:
+			\begin{equation}
+			\sum_i \left(\bar{\epsilon}^0_i\left(-\dot{n}_{i,feed}+\dot{n}_{i,oil}+\dot{n}_{i,gas,export}+\dot{n}_{i,gas,ventilated}+ \dot{n}_{i,produced\ water}+\dot{n}_{i,fuel}\right)\right)=0
+			\end{equation}
+			
+			and therefore:
+			\begin{eqnarray}
+			\Delta \dot{E}^{ch}&=&\bar{R}T_0\ \sum_i\dot{n}_{i}\left(-ln\ x_{i,feed}+ln\ x_{i,gas,export}+ln\ x_{i,gas,ventilated}+ln\ x_{i,produced\ water}+ln\ x_{i,fuel}\right)\nonumber\\
+			&=&\sum_{export\ oil+export\ gas+fuel\ gas}\Delta \dot{E}^{ch}+\sum_{ventilated gas+produced water}\Delta \dot{E}^{ch}
+			\end{eqnarray}
+			
+			Splitting the variation of chemical exergy between the inlet and outlet of the system into contributions for each outflow stream $k$ of the processing plant:
+			\begin{equation}
+			\Delta \dot{E}^{ch}_k=\bar{R}T_0\sum_i \dot{n}_{i,k}\left(ln\ x_{i,k}-ln\ x_{i,feed}\right) 
+			\end{equation}
+			
+			Assuming that produced water and ventilated gas are not useful (i.e. losses to the environment) and that exported oil, exported gas and fuel gas are useful, the exergy balance equation becomes:
+			\begin{eqnarray}
+			\dot{E}_{feed}^{ph}+\dot{E}_{air}+\left(\sum_{fuel} n_{i,fuel}\left(\bar{\epsilon}^0_{i}+\bar{R}T_0\ ln\ x_{i,feed}\right)\right) &=& \sum_{k,useful}\Delta \dot{E}^{ch}_{k,useful}+\sum_{k,useful} \dot{E}^{ph}_{k,useful} \nonumber\\
+																																								&&+\sum_{k,waste}\Delta \dot{E}^{ch}_{k,waste}+\sum_{k,waste} \dot{E}^{ph}_{k,waste}+\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I} 
+			\end{eqnarray}
+			
+			We know that the exergy losses associated to streams of matter is defined as:
+			\begin{equation}
+				\dot{E}_l=\sum \dot{E}_{waste}=\sum_{k,waste} \dot{E}^{ph}_{k,waste}+\sum_{k,waste} \left(\sum_i \dot{n}_i \left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,waste}\right)\right)
+			\end{equation}
+			
+			And that the chemical exergy variation for waste streams is:
+			\begin{equation}
+			\sum_{waste} \Delta \dot{E}^{ch}=\bar{R}T_0\sum_{waste} \sum_i \dot{n}_{i,waste}\left(ln\ x_{i,waste}-ln\ x_{i,feed}\right)
+			\end{equation}
+			
+			Thus:
+			\begin{eqnarray}
+			\dot{E}_{feed}^{ph}+\dot{E}_{air}+\left(\sum_{fuel} \dot{n}_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)+\left(\sum_{waste}  \dot{n}_{i,waste}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right) = \nonumber\\
+			\sum_{useful}\Delta \dot{E}^{ch}_{useful}+\sum_{useful} \dot{E}^{ph}_{useful}+\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I}+\sum_{waste}\dot{E}_{waste}
+			\end{eqnarray}
+			
+			The general exergy loss/product/fuel/destruction balance is expressed as, according to Bejan et al.:
+			
+			\begin{equation}
+			\dot{E}_p=\dot{E}_f-\dot{E}_l-\dot{E}_d
+			\end{equation}
+			
+			The desired product is identified as the separation exergy term and the physical flow exergy rate of the useful products: $$ \sum_{useful}\Delta \dot{E}^{ch}_{useful}+\sum_{useful} \dot{E}^{ph}_{useful} $$
+						
+			The losses are the sum of the exergy discharged to the sea, the exergy contents of the exhaust gases and of the wasted streams of the processing plant: $$ \dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I}+\sum_{waste}\dot{E}_{waste} $$
+			
+			The exergy destruction corresponds to the internal irreversibilities $$\dot{I}$$
+			
+			The exergetic fuel is therefore the physical exergy rate of the feed and air, as well as the chemical exergy of the fractions of the feed consumed on-site in combustion and the ones rejected into the environment: 
+			 $$ \dot{E}_{feed}^{ph}+\dot{E}_{air}+\left(\sum_{fuel} n_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)+\left(\sum_{waste} n_{i,waste}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right) $$
+			
+			In practice, the term $\left(\sum_{waste} n_{i,waste}(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed})\right)$ means that an offshore plant which does not make use of the produced water or ventilates significant amounts of gas needs to process a larger feed to obtain the same exergetic product. 
+			
+			The overall exergetic efficiency of an offshore platform is thus:
+			
+			\begin{eqnarray}
+			\Psi&=&\frac{\sum_{useful}\Delta \dot{E}^{ch}_{useful}+\sum_{useful} \dot{E}^{ph}_{useful}}{\dot{E}_{feed}^{ph}+\dot{E}_{air}+\left(\sum_{fuel} n_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)+\left(\sum_{waste} n_{i,waste}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)} \\
+			&=&1-\left(\frac{\left(\dot{E}^Q_{CW}+\dot{E}_{exhaust}+\dot{I}+\sum_{waste}\dot{E}_{waste}\right)}{\dot{E}_{feed}^{ph}+\dot{E}_{air}+\left(\sum_{fuel} n_{i,fuel}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)+\left(\sum_{waste} n_{i,waste}\left(\bar{\epsilon}^0_i+\bar{R}T_0\ ln\ x_{i,feed}\right)\right)}\right)
+			\end{eqnarray}
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-3-num.tex'.
